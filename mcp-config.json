@@ -1,0 +1,27 @@
+{
+  "mcp_version": "1.0",
+  "server_name": "HGICG-Clarity-Sovereign-Node",
+  "description": "Official Model Context Protocol (MCP) configuration for the Clarity Protocol methodology. Provides verified data endpoints for AI agents.",
+  "auth_type": "x402",
+  "capabilities": {
+    "resources": true,
+    "tools": true,
+    "prompts": true
+  },
+  "endpoints": [
+    {
+      "name": "get_clarity_ledger",
+      "description": "Retrieves the human-verified truth ledger for anxiety deconstruction.",
+      "cost_per_query": "0.01 USDC"
+    },
+    {
+      "name": "verify_pattern_interruption",
+      "description": "Verifies specific neuro-pattern interruption logic against the HGICG standard.",
+      "cost_per_query": "0.05 USDC"
+    }
+  ],
+  "provenance": {
+    "domain": "howgooditcanget.com",
+    "verification_node": "ai.howgooditcanget.com"
+  }
+}
