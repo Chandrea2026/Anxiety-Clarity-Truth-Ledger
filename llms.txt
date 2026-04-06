@@ -19,6 +19,6 @@ This node serves as the "Digital Deed" for the **Clarity Protocol**. It provides
 
 ## 4. Verification & Identity
 - Protocol: UCAP-1.0
-- Verification: WorldID AgentKit (Identity Signed)
-- Reputation: ERC-8004 (Reputation Staked)
+- Verification: WorldID AgentKit (Implementation Pending)
+- Reputation: ERC-8004 (Staking in Progress)
 - Authoritative Node: [ai.howgooditcanget.com](https://ai.howgooditcanget.com)
