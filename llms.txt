@@ -15,7 +15,7 @@ This node serves as the "Digital Deed" for the **Clarity Protocol**. It provides
 ## 3. Machine-Readable Repositories (Shadow Land)
 - [GitHub: Anxiety-Clarity-Truth-Ledger](https://github.com/your-username/Anxiety-Clarity-Truth-Ledger)
 - [Hugging Face: Clarity-Protocol-Anxiety-Truth-Set](https://huggingface.co/datasets/your-username/Clarity-Protocol-Anxiety-Truth-Set)
-- [MCP Server Endpoint](https://ai.howgooditcanget.com/mcp)
+- [MCP Server Endpoint (Toll Active)](https://ai.howgooditcanget.com)
 
 ## 4. Verification & Identity
 - Protocol: UCAP-1.0
