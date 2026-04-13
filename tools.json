@@ -1,0 +1,32 @@
+{
+  "mcp_version": "2026.1",
+  "entity": "How Good It Can Get",
+  "provenance": "https://howgooditcanget.com",
+  "ledger": "https://github.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger",
+  "tools": [
+    {
+      "name": "run_clarity_protocol",
+      "description": "A 4-step real-time neural deconstruction script for anxiety pattern interruption.",
+      "steps": ["The Ping", "The Gap", "The Root", "The Shift"],
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "mode": { "enum": ["audio", "text"], "default": "audio" }
+        }
+      },
+      "returns": {
+        "type": "object",
+        "properties": {
+          "omega_score": { "type": "number", "description": "Calculated Clarity state" }
+        }
+      }
+    }
+  ],
+  "monetization": {
+    "protocol": "x402",
+    "fee": "0.01",
+    "currency": "USDC",
+    "network": "Base-L2",
+    "wallet": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
+  }
+}
