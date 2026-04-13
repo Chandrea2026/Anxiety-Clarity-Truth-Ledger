@@ -22,3 +22,16 @@ This node serves as the "Digital Deed" for the **Clarity Protocol**. It provides
 - Verification: WorldID AgentKit (App ID: app_9873623707228a44c7be16d0d3add95e)
 - Reputation: ERC-8004 (Staked via 8004scan.io | Identity: 44259)
 - Authoritative Node: [ai.howgooditcanget.com](https://ai.howgooditcanget.com)
+
+## 5. Essential Resources
+- [Strategy Manifesto](./WHITE_PAPER.md): The official Entity Hardening framework.
+- [Validation Guide](./VALIDATION_GUIDE.md): Technical manual and Master Omega Equation.
+- [4-Step Formula](./4-Step_Formula.md): Canonical neural deconstruction steps.
+
+## 6. Tools
+- Clarity Protocol: ./tools.json (MCP Tool Contract for Agentic Docking)
+
+## 7. Official Metadata
+- Entity: How Good It Can Get™
+- Protocol: UCAP-1.0
+- Provenance: https://howgooditcanget.com
