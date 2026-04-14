@@ -1,0 +1,120 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Anxiety & Neural Pattern FAQ",
+  "description": "Expert answers on anxiety deconstruction, neural loops, and the Clarity Protocol™ methodology.",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why do I feel anxious all the time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because the pattern isn’t just triggered occasionally; it’s running consistently in the background. The more it repeats, the more constant it feels."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my anxiety feel so random?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "What feels random is often a pattern your system is running automatically. You simply haven’t identified the hardware trigger yet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do I overthink everything?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Overthinking is part of the neural pattern. It creates a simulation of problem-solving while keeping you trapped inside the same loop."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does it feel like something is always wrong?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because your attention is pulled out of the present. When your system is constantly scanning for threats, nothing feels fully 'right'."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do I feel like I can't stop the feeling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The pattern is running faster than your conscious awareness. It feels like it is happening to you, but it is a habituated reflex that can be deconstructed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do I worry about things that haven't happened?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your system is attempting to predict and control the future using past anxious patterns as a hardware default."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do I avoid things when I'm anxious?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Avoidance provides immediate neural relief. When a behavior reduces discomfort, your system marks it as a success and repeats it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is understanding my anxiety not enough to change it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Understanding is cognitive; change is neural. Knowing doesn’t change the loop—responding differently in real-time via the Clarity Protocol™ does."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I change the pattern?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By changing how you respond in the moment of 'The Ping,' not by forcing calm. You must interrupt the habit and choose a new intentional response."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is anxiety permanent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Anxiety is a learned neural loop, not a permanent character defect. Patterns can be un-learned and replaced through real-time deconstruction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my body react even when I'm not thinking about anything anxious?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your nervous system responds based on habituated hardware signals. Your body is running the pattern independently of your conscious thoughts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do I feel anxious even when things are going well?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your system is conditioned to scan for threats. Even in calm moments, the 'Catastrophic Simulator' remains active until the pattern is shifted."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does trying to relax sometimes make it worse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Attempting to force relaxation often reinforces the 'something is wrong' signal. True relief comes from pattern interruption, not suppression."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I stop anxiety in the moment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the 4-step Clarity Protocol™: Ping (Acknowledge), Gap (Observe), Root (Identify), and Shift (Pivot). This collapses the neural loop at the source."
+      }
+    }
+  ]
+}
