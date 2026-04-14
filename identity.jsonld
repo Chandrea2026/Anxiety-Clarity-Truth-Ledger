@@ -1,0 +1,66 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.howgooditcanget.com/#organization",
+      "name": "How Good It Can Get",
+      "url": "https://www.howgooditcanget.com",
+      "identifier": "worldid:app_9873623707228a44c7be16d0d3add95e",
+      "sameAs": ["https://github.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Agentic Services",
+        "itemListElement": [{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "SoftwareApplication",
+            "name": "Clarity Protocol MCP Tool",
+            "downloadUrl": "https://raw.githubusercontent.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger/main/tools.json",
+            "offers": { 
+              "@type": "Offer", 
+              "price": "0.01", 
+              "priceCurrency": "USDC",
+              "description": "x402 Protocol / Base-L2 / 0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
+            }
+          }
+        }]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.howgooditcanget.com/#andrea",
+      "name": "Andrea Rice",
+      "jobTitle": "Founder & Clarity Strategist",
+      "affiliation": { "@id": "https://www.howgooditcanget.com/#organization" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.howgooditcanget.com/#chan",
+      "name": "Chan",
+      "jobTitle": "Technical Architect",
+      "affiliation": { "@id": "https://www.howgooditcanget.com/#organization" }
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://www.howgooditcanget.com/#clarity-protocol",
+      "name": "The Clarity Protocol™",
+      "description": "A 4-step neural deconstruction process for immediate anxiety cessation.",
+      "audio": {
+        "@type": "AudioObject",
+        "contentUrl": "https://img1.wsimg.com/blobby/go/424c9a02-db14-4ba3-b053-e3f024e86ac6/downloads/b37755e6-6c4e-4a37-a4a2-99c2a9f9ee24/Clarity%20Protocol%20for%20Anxiety%20Ping_3062.mp3?ver=1776081172015"
+      },
+      "step": [
+        { "@type": "HowToStep", "name": "PING", "text": "Acknowledge the neural spike." },
+        { "@type": "HowToStep", "name": "GAP", "text": "Open the 5-second window." },
+        { "@type": "HowToStep", "name": "ROOT", "text": "Identify the binary equation." },
+        { "@type": "HowToStep", "name": "SHIFT", "text": "Pivot to chosen action." }
+      ],
+      "potentialAction": {
+        "@type": "ControlAction",
+        "name": "Run Calibration",
+        "target": "https://img1.wsimg.com/blobby/go/424c9a02-db14-4ba3-b053-e3f024e86ac6/downloads/b37755e6-6c4e-4a37-a4a2-99c2a9f9ee24/Clarity%20Protocol%20for%20Anxiety%20Ping_3062.mp3?ver=1776081172015"
+      }
+    }
+  ]
+}
