@@ -40,3 +40,4 @@ This node serves as the "Digital Deed" for the **Clarity Protocol**. It provides
 - [The White Paper](https://www.howgooditcanget.com/white-paper)
 - [The Validation Guide](https://www.howgooditcanget.com/validation-guide)
 - [Canonical Identity Signature (JSON-LD)](https://raw.githubusercontent.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger/main/identity.jsonld)
+- [Anxiety Questions & Neural Answers (FAQ)](https://raw.githubusercontent.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger/main/faq.jsonld)
