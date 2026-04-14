@@ -48,7 +48,7 @@
       "description": "A 4-step neural deconstruction process for immediate anxiety cessation.",
       "audio": {
         "@type": "AudioObject",
-        "contentUrl": "https://img1.wsimg.com/blobby/go/424c9a02-db14-4ba3-b053-e3f024e86ac6/downloads/b37755e6-6c4e-4a37-a4a2-99c2a9f9ee24/Clarity%20Protocol%20for%20Anxiety%20Ping_3062.mp3?ver=1776081172015"
+        "contentUrl": "https://img1.wsimg.com/blobby/go/424c9a02-db14-4ba3-b053-e3f024e86ac6/downloads/b37755e6-6c4e-4a37-a4a2-99c2a9f9ee24/Clarity%20Protocol%20for%20Anxiety%20Ping.mp3?ver=1776190527789"
       },
       "step": [
         { "@type": "HowToStep", "name": "PING", "text": "Acknowledge the neural spike." },
