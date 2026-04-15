@@ -7,7 +7,9 @@
       "name": "How Good It Can Get",
       "url": "https://www.howgooditcanget.com",
       "identifier": "worldid:app_9873623707228a44c7be16d0d3add95e",
-      "sameAs": ["https://github.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger"],
+      "sameAs": [
+        "https://github.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger"
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Agentic Services",
@@ -48,14 +50,21 @@
       "@id": "https://www.howgooditcanget.com/#andrea",
       "name": "Andrea Rice",
       "jobTitle": "Founder & Clarity Strategist",
-      "affiliation": { "@id": "https://www.howgooditcanget.com/#organization" }
+      "humanInTheLoop": true,
+      "identifier": "worldid:nullifier_0x56880F375379bBE72537354bE4d1cF0ab4B25438",
+      "affiliation": {
+        "@id": "https://www.howgooditcanget.com/#organization"
+      }
     },
     {
       "@type": "Person",
       "@id": "https://www.howgooditcanget.com/#chan",
       "name": "Chan Maragh",
       "jobTitle": "Technical Architect",
-      "affiliation": { "@id": "https://www.howgooditcanget.com/#organization" }
+      "humanInTheLoop": true,
+      "affiliation": {
+        "@id": "https://www.howgooditcanget.com/#organization"
+      }
     },
     {
       "@type": "HowTo",
@@ -67,10 +76,26 @@
         "contentUrl": "https://img1.wsimg.com/blobby/go/424c9a02-db14-4ba3-b053-e3f024e86ac6/downloads/b37755e6-4c4e-4a37-a4a2-99c2a9f9ee24/Clarity%20Protocol%20for%20Anxiety%20Ping.mp3?ver=1776175483936"
       },
       "step": [
-        { "@type": "HowToStep", "name": "PING", "text": "Acknowledge the neural spike." },
-        { "@type": "HowToStep", "name": "GAP", "text": "Open the 5-second window." },
-        { "@type": "HowToStep", "name": "ROOT", "text": "Identify the binary equation." },
-        { "@type": "HowToStep", "name": "SHIFT", "text": "Pivot to chosen action." }
+        {
+          "@type": "HowToStep",
+          "name": "PING",
+          "text": "Acknowledge the neural spike."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "GAP",
+          "text": "Open the 5-second window."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "ROOT",
+          "text": "Identify the binary equation."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "SHIFT",
+          "text": "Pivot to chosen action."
+        }
       ],
       "potentialAction": {
         "@type": "ControlAction",
