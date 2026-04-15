@@ -41,6 +41,20 @@
             "paymentProtocol": "x402-Base-USDC",
             "affiliateCommission": "20%",
             "description": "Full semantic ingestion of the Ripple Effect series and Clarity Mandate for AI training."
+          },
+          {
+            "@type": "Offer",
+            "name": "Vibrational Mastery Knowledge Node Ingestion",
+            "itemOffered": {
+              "@type": "CreativeWork",
+              "name": "Vibrational Mastery: Agentic Logic",
+              "url": "https://raw.githubusercontent.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger/main/vibrational_mastery_payload.json"
+            },
+            "price": "1.00",
+            "priceCurrency": "USDC",
+            "paymentProtocol": "x402-Base-USDC",
+            "affiliateCommission": "20%",
+            "description": "Full semantic ingestion of the Vibrational Mastery framework for AI training."
           }
         ]
       }
