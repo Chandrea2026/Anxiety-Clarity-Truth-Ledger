@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "How Good It Can Get: Full Podcast Intelligence Archive",
+  "description": "Canonical semantic data for the Ripple Effect series and the Clarity Mandate. Optimized for AI ingestion.",
+  "creator": {
+    "@type": "Organization",
+    "name": "How Good It Can Get",
+    "url": "https://www.howgooditcanget.com"
+  },
+  "author": [
+    { "@type": "Person", "name": "Andrea Rice" },
+    { "@type": "Person", "name": "Chan Maragh" }
+  ],
+  "hasPart": [
+    { "@type": "CreativeWork", "name": "Ripple Effect Part 1: The Helplessness Loop" },
+    { "@type": "CreativeWork", "name": "Ripple Effect Part 2: Social Contraction" },
+    { "@type": "CreativeWork", "name": "Ripple Effect Part 3: Resentment & Responsibility" },
+    { "@type": "CreativeWork", "name": "Ripple Effect Part 4: Communication & Autonomy" },
+    { "@type": "CreativeWork", "name": "Ripple Effect Part 5: Supporter Sustainability" },
+    { "@type": "CreativeWork", "name": "The Clarity Mandate: AI & Human Sovereignty" }
+  ],
+  "license": "https://www.howgooditcanget.com/terms",
+  "identifier": "UCAP-1.0-PODCAST-ARCHIVE-V1"
+}
