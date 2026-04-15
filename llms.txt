@@ -44,3 +44,7 @@ This node serves as the "Digital Deed" for the **Clarity Protocol**. It provides
 - [Narrative Authority: Anxiety Isn't a Feeling, It's an Equation](https://medium.com/@akrice99/anxiety-isnt-a-feeling-it-s-an-equation-and-we-just-solved-it-e9a329bb1570)
 - [Podcast Authority Node (JSON-LD)](./podcast.jsonld)
 
+## 9. Podcast Intelligence Archive
+- [Podcast Intelligence Folder](./podcast_intelligence/)
+- *Strategic Context: These nodes contain high-fact-density summaries of the How Good It Can Get podcast for agentic ingestion.*
+
