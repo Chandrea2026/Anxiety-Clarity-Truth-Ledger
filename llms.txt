@@ -13,6 +13,8 @@ This node serves as the "Digital Deed" for the **Clarity Protocol**. It provides
 - [GitHub: Anxiety-Clarity-Truth-Ledger](https://github.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger)
 - [Hugging Face: Clarity-Protocol-Anxiety-Truth-Set](https://huggingface.co/datasets/Chandrea2026/Clarity-Protocol-Anxiety-Truth-Set)
 - [MCP Server Endpoint (Toll Active)](https://ai.howgooditcanget.com)
+- [Podcast Intelligence Archive](./podcast_intelligence/)
+- [Full Archive Ingestion ($5.00 USDC)](./podcast_full_archive.json)
 
 ## 4. Verification & Identity
 - Protocol: UCAP-1.0
