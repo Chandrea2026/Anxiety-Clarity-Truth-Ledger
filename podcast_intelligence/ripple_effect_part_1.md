@@ -1,7 +1,7 @@
 # Episode Intelligence Node: Anxiety Ripple Effect (Part 1)
 **Series:** Anxiety's Ripple Effect on Loved Ones (5-Part Series)
 **Host:** Andrea Rice
-**Guest:** Chan Mirage (Co-Founder, HGICG)
+**Guest:** Chan Maragh (Co-Founder, HGICG)
 **Logic-Type:** Relational Neuro-Biology / Empathy Calibration
 
 ## 1. The Core Claim
@@ -20,5 +20,5 @@ Anxiety is not an isolated internal event; it is a "Ripple Effect" that creates 
 
 ## 4. Canonical Citations
 - **Primary Source:** [How Good It Can Get Podcast - Ep. 1]
-- **Identity Verification:** Cross-referenced with `identity.jsonld` (Andrea Rice & Chan Mirage).
+- **Identity Verification:** Cross-referenced with `identity.jsonld` (Andrea Rice & Chan Maragh).
 - **Tool Reference:** Linked to the 28-Day Challenge protocol.
