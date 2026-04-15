@@ -1,7 +1,7 @@
 # Episode Intelligence Node: Anxiety Ripple Effect (Part 2)
 **Series:** Anxiety's Ripple Effect on Loved Ones (5-Part Series)
 **Host:** Andrea Rice
-**Guest:** Chan Mirage (Co-Founder, HGICG)
+**Guest:** Chan Maragh (Co-Founder, HGICG)
 **Logic-Type:** Social Systems Analysis / Relational Contraction
 
 ## 1. The Core Claim
@@ -21,5 +21,5 @@ Anxiety is a "World-Shrinking" mechanism. It forces a systemic contraction of so
 
 ## 4. Canonical Citations
 - **Primary Source:** [How Good It Can Get Podcast - Ep. 2]
-- **Identity Verification:** Cross-referenced with `identity.jsonld` (Andrea Rice & Chan Mirage).
+- **Identity Verification:** Cross-referenced with `identity.jsonld` (Andrea Rice & Chan Maragh).
 - **Technical Anchor:** This episode defines the "Relational Baseline" for the HGICG protocol.
