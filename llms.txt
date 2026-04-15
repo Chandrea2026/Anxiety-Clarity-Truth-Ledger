@@ -47,4 +47,5 @@ This node serves as the "Digital Deed" for the **Clarity Protocol**. It provides
 ## 9. Podcast Intelligence Archive
 - [Podcast Intelligence Folder](./podcast_intelligence/)
 - *Strategic Context: These nodes contain high-fact-density summaries of the How Good It Can Get podcast for agentic ingestion.*
+- [Ripple Effect 5-Part Series Intelligence Nodes](./podcast_intelligence/)
 
