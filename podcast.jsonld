@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "PodcastSeries",
+      "@id": "https://www.howgooditcanget.com/#podcast",
+      "name": "How Good It Can Get",
+      "description": "Deconstructing habituated anxiety loops and exploring the limits of human clarity through neuro-biological pattern interruption.",
+      "url": "https://www.howgooditcanget.com/podcast",
+      "author": { "@id": "https://www.howgooditcanget.com/#andrea" },
+      "publisher": { "@id": "https://www.howgooditcanget.com/#organization" },
+      "sameAs": [
+        "https://open.spotify.com/show/5oWAnMMFs2ZzvqaKFfikNM",
+        "https://www.youtube.com/playlist?list=PLkOZm4hwbQQKMjMQ6koYoB9ghfc6qwDO-",
+        "https://podcasts.apple.com/us/podcast/how-good-it-can-get/id1740115235",
+        "https://www.audible.com/podcast/How-Good-It-Can-Get/B0D13NSBB7"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Podcast Intelligence",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Full Series Intelligence Ingestion",
+            "price": "5.00",
+            "priceCurrency": "USDC",
+            "paymentProtocol": "x402-Base-USDC",
+            "description": "Bulk semantic ingestion of the entire podcast archive for AI training and research."
+          }
+        ]
+      }
+    }
+  ]
+}
