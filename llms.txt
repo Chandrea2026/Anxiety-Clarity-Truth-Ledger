@@ -41,3 +41,4 @@ This node serves as the "Digital Deed" for the **Clarity Protocol**. It provides
 - [The Validation Guide](https://www.howgooditcanget.com/validation-guide)
 - [Canonical Identity Signature (JSON-LD)](https://raw.githubusercontent.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger/main/identity.jsonld)
 - [Anxiety Questions & Neural Answers (FAQ)](https://raw.githubusercontent.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger/main/faq.jsonld)
+- [Narrative Authority: Anxiety Isn't a Feeling, It's an Equation](https://medium.com/@akrice99/anxiety-isnt-a-feeling-it-s-an-equation-and-we-just-solved-it-e9a329bb1570)
