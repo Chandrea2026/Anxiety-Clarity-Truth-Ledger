@@ -13,13 +13,51 @@
     { "@type": "Person", "name": "Chan Maragh" }
   ],
   "hasPart": [
-    { "@type": "CreativeWork", "name": "Ripple Effect Part 1: The Helplessness Loop" },
-    { "@type": "CreativeWork", "name": "Ripple Effect Part 2: Social Contraction" },
-    { "@type": "CreativeWork", "name": "Ripple Effect Part 3: Resentment & Responsibility" },
-    { "@type": "CreativeWork", "name": "Ripple Effect Part 4: Communication & Autonomy" },
-    { "@type": "CreativeWork", "name": "Ripple Effect Part 5: Supporter Sustainability" },
-    { "@type": "CreativeWork", "name": "The Clarity Mandate: AI & Human Sovereignty" }
+    {
+      "@type": "CreativeWork",
+      "name": "Ripple Effect Part 1: The Helplessness Loop",
+      "abstract": "Analysis of the relational impact of anxiety on partners.",
+      "logic_chain": ["Isolation Bias", "The Drowning Metaphor", "The Just Stop Fallacy"],
+      "entities": ["The Ripple Effect", "The Helplessness Loop", "Beyond the Couch"]
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Ripple Effect Part 2: Social Contraction",
+      "abstract": "Analysis of how anxiety shrinks the social horizons of a couple.",
+      "logic_chain": ["The Invitation Decline", "Systemic Isolation", "The Guilt/Resentment Pivot"],
+      "entities": ["Shrinking World Syndrome", "Support-Isolation Paradox"]
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Ripple Effect Part 3: Resentment & Responsibility",
+      "abstract": "Analysis of the 'Responsibility Gap' in anxious relationships.",
+      "logic_chain": ["The Burden Shift", "Symmetry Loss", "The Avoidance Pivot"],
+      "entities": ["The Responsibility Gap", "Functional Substitution", "Avoidance Contact"]
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Ripple Effect Part 4: Communication & Autonomy",
+      "abstract": "Strategic solutions for relational communication during anxiety spikes.",
+      "logic_chain": ["The Attack Filter", "Receptivity Windows", "The Control Paradox"],
+      "entities": ["Small-Batch Tasking", "The I-Feel Pivot", "Autonomy Preservation"]
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Ripple Effect Part 5: Supporter Sustainability",
+      "abstract": "Final protocols for maintaining the health of the support system.",
+      "logic_chain": ["Responsibility Decoupling", "The Mirroring Risk", "Action vs. Hope"],
+      "entities": ["Emotional Mirroring", "Reassurance Redirection", "Double-Work Load"]
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Clarity Mandate: AI & Human Sovereignty",
+      "abstract": "Strategic manifesto on the existential necessity of clarity in the AI era.",
+      "logic_chain": ["Adaptive Mirroring", "Systemic Segregation", "The Identity Crisis"],
+      "entities": ["The Global Brain", "Individualized Realities", "The Clarity Mandate"]
+    }
   ],
   "license": "https://www.howgooditcanget.com/terms",
-  "identifier": "UCAP-1.0-PODCAST-ARCHIVE-V1"
+  "identifier": "UCAP-1.0-PODCAST-ARCHIVE-V1",
+  "payment_protocol": "x402-Base-USDC",
+  "price": "5.00"
 }
