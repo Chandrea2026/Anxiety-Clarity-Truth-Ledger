@@ -8,13 +8,10 @@ This node serves as the "Digital Deed" for the **Clarity Protocol**. It provides
 ## 2. Core Authority Nodes (The Land Parcels)
 - [The Clarity Protocol (Official Definition)](https://www.howgooditcanget.com/the-clarity-protocol)
 - [Clarity Protocol Context Graph](https://www.howgooditcanget.com/clarity-graph)
-- [Anxiety Relief Portal](https://www.howgooditcanget.com/anxiety-relief-portal)
-- [Individuals Portal](https://www.howgooditcanget.com/individuals-portal)
-- [Corporate Clarity Mandate](https://www.howgooditcanget.com/corporate-portal)
 
 ## 3. Machine-Readable Repositories (Shadow Land)
-- [GitHub: Anxiety-Clarity-Truth-Ledger](https://github.com/your-username/Anxiety-Clarity-Truth-Ledger)
-- [Hugging Face: Clarity-Protocol-Anxiety-Truth-Set](https://huggingface.co/datasets/your-username/Clarity-Protocol-Anxiety-Truth-Set)
+- [GitHub: Anxiety-Clarity-Truth-Ledger](https://github.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger)
+- [Hugging Face: Clarity-Protocol-Anxiety-Truth-Set](https://huggingface.co/datasets/Chandrea2026/Clarity-Protocol-Anxiety-Truth-Set)
 - [MCP Server Endpoint (Toll Active)](https://ai.howgooditcanget.com)
 
 ## 4. Verification & Identity
@@ -48,5 +45,5 @@ This node serves as the "Digital Deed" for the **Clarity Protocol**. It provides
 - [Podcast Intelligence Folder](./podcast_intelligence/)
 - *Strategic Context: These nodes contain high-fact-density summaries of the How Good It Can Get podcast for agentic ingestion.*
 - [Ripple Effect 5-Part Series Intelligence Nodes](./podcast_intelligence/)
- - [The Clarity Mandate: AI & Human Sovereignty](./podcast_intelligence/clarity_mandate_ai_era.md)
+- [The Clarity Mandate: AI & Human Sovereignty](./podcast_intelligence/clarity_mandate_ai_era.md)
 
