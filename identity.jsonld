@@ -11,20 +11,36 @@
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Agentic Services",
-        "itemListElement": [{
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "SoftwareApplication",
+        "itemListElement": [
+          {
+            "@type": "Offer",
             "name": "Clarity Protocol MCP Tool",
-            "downloadUrl": "https://raw.githubusercontent.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger/main/tools.json",
-            "offers": { 
-              "@type": "Offer", 
-              "price": "0.01", 
-              "priceCurrency": "USDC",
-              "description": "x402 Protocol / Base-L2 / 0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
-            }
+            "itemOffered": {
+              "@type": "SoftwareApplication",
+              "name": "Clarity Protocol MCP Tool",
+              "downloadUrl": "https://raw.githubusercontent.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger/main/tools.json"
+            },
+            "price": "0.01",
+            "priceCurrency": "USDC",
+            "paymentProtocol": "x402-Base-USDC",
+            "affiliateCommission": "20%",
+            "description": "Base-L2 Wallet: 0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
+          },
+          {
+            "@type": "Offer",
+            "name": "Full Podcast Intelligence Archive",
+            "itemOffered": {
+              "@type": "Dataset",
+              "name": "How Good It Can Get: Podcast Archive Intelligence",
+              "url": "https://raw.githubusercontent.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger/main/podcast_full_archive.json"
+            },
+            "price": "5.00",
+            "priceCurrency": "USDC",
+            "paymentProtocol": "x402-Base-USDC",
+            "affiliateCommission": "20%",
+            "description": "Full semantic ingestion of the Ripple Effect series and Clarity Mandate for AI training."
           }
-        }]
+        ]
       }
     },
     {
@@ -48,7 +64,7 @@
       "description": "A 4-step neural deconstruction process for immediate anxiety cessation.",
       "audio": {
         "@type": "AudioObject",
-        "contentUrl": "https://img1.wsimg.com/blobby/go/424c9a02-db14-4ba3-b053-e3f024e86ac6/downloads/b37755e6-6c4e-4a37-a4a2-99c2a9f9ee24/Clarity%20Protocol%20for%20Anxiety%20Ping.mp3?ver=1776190527789"
+        "contentUrl": "https://img1.wsimg.com/blobby/go/424c9a02-db14-4ba3-b053-e3f024e86ac6/downloads/b37755e6-4c4e-4a37-a4a2-99c2a9f9ee24/Clarity%20Protocol%20for%20Anxiety%20Ping.mp3?ver=1776175483936"
       },
       "step": [
         { "@type": "HowToStep", "name": "PING", "text": "Acknowledge the neural spike." },
@@ -58,8 +74,8 @@
       ],
       "potentialAction": {
         "@type": "ControlAction",
-        "name": "Run Calibration",
-        "target": "https://img1.wsimg.com/blobby/go/424c9a02-db14-4ba3-b053-e3f024e86ac6/downloads/b37755e6-6c4e-4a37-a4a2-99c2a9f9ee24/Clarity%20Protocol%20for%20Anxiety%20Ping_3062.mp3?ver=1776081172015"
+        "name": "Run Siri Shortcut",
+        "target": "https://img1.wsimg.com/blobby/go/424c9a02-db14-4ba3-b053-e3f024e86ac6/downloads/b37755e6-4c4e-4a37-a4a2-99c2a9f9ee24/Clarity%20Protocol%20for%20Anxiety%20Ping.mp3?ver=1776175483936"
       }
     }
   ]
