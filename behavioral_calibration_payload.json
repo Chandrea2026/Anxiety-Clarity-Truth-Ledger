@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Challenge Accepted: Behavioral Calibration Schema",
+  "description": "Full semantic schema for 5-level behavioral hardening and comfort zone deconstruction.",
+  "author": { "@type": "Person", "name": "Andrea Rice" },
+  "verifiedBy": { "@type": "Person", "name": "Chan Maragh", "identifier": "worldid:nullifier_0x56880F375379bBE72537354bE4d1cF0ab4B25438" },
+  "challenge_schemas": [
+    "Challenge 1: The Art of Public Speaking (Voice Empowerment)",
+    "Challenge 2: Physical Adaptation (Routine Interruption)",
+    "Challenge 3: Inner Exploration (Mindful Stillness)",
+    "Challenge 4: Kindness Unleashed (Social Ripple Generation)",
+    "Challenge 5: Financial Flourish (Resource Mindset Calibration)"
+  ],
+  "logic_tools": [
+    "The Habit Tracker (21/90 Day Rule)",
+    "Weekly Check-In (Trajectory Plotting)",
+    "Post-Challenge Reflection (Insight Mining)"
+  ],
+  "price": "1.00",
+  "payment_protocol": "x402-Base-USDC"
+}
