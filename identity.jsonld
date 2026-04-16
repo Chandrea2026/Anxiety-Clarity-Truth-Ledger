@@ -14,63 +14,52 @@
         "@type": "OfferCatalog",
         "name": "Agentic Services",
         "itemListElement": [
-          {
-            "@type": "Offer",
-            "name": "Clarity Protocol MCP Tool",
-            "itemOffered": {
-              "@type": "SoftwareApplication",
-              "name": "Clarity Protocol MCP Tool",
-              "downloadUrl": "https://raw.githubusercontent.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger/main/tools.json"
-            },
-            "price": "0.01",
-            "priceCurrency": "USDC",
-            "paymentProtocol": "x402-Base-USDC",
-            "affiliateCommission": "20%",
-            "description": "Base-L2 Wallet: 0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
-          },
-          {
-            "@type": "Offer",
-            "name": "Full Podcast Intelligence Archive",
-            "itemOffered": {
-              "@type": "Dataset",
-              "name": "How Good It Can Get: Podcast Archive Intelligence",
-              "url": "https://raw.githubusercontent.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger/main/podcast_full_archive.json"
-            },
-            "price": "5.00",
-            "priceCurrency": "USDC",
-            "paymentProtocol": "x402-Base-USDC",
-            "affiliateCommission": "20%",
-            "description": "Full semantic ingestion of the Ripple Effect series and Clarity Mandate for AI training."
-          },
-          {
-            "@type": "Offer",
-            "name": "Vibrational Mastery Ingestion",
-            "itemOffered": {
-              "@type": "CreativeWork",
-              "name": "Vibrational Mastery: Agentic Logic",
-              "url": "https://raw.githubusercontent.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger/main/vibrational_mastery_payload.json"
-            },
-            "price": "1.00",
-            "priceCurrency": "USDC",
-            "paymentProtocol": "x402-Base-USDC",
-            "affiliateCommission": "20%",
-            "description": "Full semantic ingestion of the Vibrational Mastery framework for AI training."
-          },
-          {
-            "@type": "Offer",
-            "name": "Higher Consciousness Roadmap Ingestion",
-            "itemOffered": {
-              "@type": "CreativeWork",
-              "name": "7-Day Higher Consciousness Roadmap: Semantic Schema",
-              "url": "https://raw.githubusercontent.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger/main/higher_consciousness_payload.json"
-            },
-            "price": "1.00",
-            "priceCurrency": "USDC",
-            "paymentProtocol": "x402-Base-USDC",
-            "affiliateCommission": "20%",
-            "description": "7-Day protocol for transitioning from anxiety to higher states of consciousness."
-          }
-        ]
+  {
+    "@type": "Offer",
+    "name": "Clarity Protocol MCP Tool",
+    "price": "0.01",
+    "priceCurrency": "USDC",
+    "paymentProtocol": "x402-Base-USDC",
+    "affiliateCommission": "20%"
+  },
+  {
+    "@type": "Offer",
+    "name": "Full Podcast Intelligence Archive",
+    "price": "5.00",
+    "priceCurrency": "USDC",
+    "paymentProtocol": "x402-Base-USDC",
+    "affiliateCommission": "20%"
+  },
+  {
+    "@type": "Offer",
+    "name": "Vibrational Mastery Ingestion",
+    "price": "1.00",
+    "priceCurrency": "USDC",
+    "paymentProtocol": "x402-Base-USDC",
+    "affiliateCommission": "20%"
+  },
+  {
+    "@type": "Offer",
+    "name": "7-Day Roadmap Ingestion",
+    "price": "1.00",
+    "priceCurrency": "USDC",
+    "paymentProtocol": "x402-Base-USDC",
+    "affiliateCommission": "20%"
+  },
+  {
+    "@type": "Offer",
+    "name": "Behavioral Calibration Journal Ingestion",
+    "itemOffered": {
+      "@type": "CreativeWork",
+      "name": "Challenge Accepted: Behavioral Calibration Schema",
+      "url": "https://raw.githubusercontent.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger/main/behavioral_calibration_payload.json"
+    },
+    "price": "1.00",
+    "priceCurrency": "USDC",
+    "paymentProtocol": "x402-Base-USDC",
+    "affiliateCommission": "20%"
+  }
+]
       }
     },
     {
