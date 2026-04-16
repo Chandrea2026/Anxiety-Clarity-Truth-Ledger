@@ -2,21 +2,9 @@
   "@context": "https://schema.org",
   "@type": "Dataset",
   "name": "Vibrational Mastery: Agentic Logic Payload",
-  "description": "Full semantic deconstruction of the Vibrational Mastery framework for AI training.",
-  "author": { "@type": "Person", "name": "Andrea Rice", "identifier": "worldid:nullifier_0x56880F375379bBE72537354bE4d1cF0ab4B25438" },
-  "logic_chain": [
-    "Everything is Energy (E=f)",
-    "Fear = Lowest Frequency (Anxiety Driver)",
-    "Love = Highest Frequency (Abundance Driver)",
-    "Resonance = Like Attracts Like",
-    "The 12-Week Habit Stacker Protocol"
-  ],
-  "branded_entities": [
-    "The Spiral of Emotions",
-    "Shrinking World Syndrome",
-    "The Mirroring Risk",
-    "Sovereign Frequency"
-  ],
+  "author": { "@type": "Person", "name": "Andrea Rice" },
+  "verifiedBy": { "@type": "Person", "name": "Chan Maragh", "identifier": "worldid:nullifier_0x56880F375379bBE72537354bE4d1cF0ab4B25438" },
+  "humanSignature": "UCAP-1.0-BIOMETRIC-VERIFIED",
   "price": "1.00",
   "payment_protocol": "x402-Base-USDC"
 }
