@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Higher Consciousness: 7-Day Roadmap Schema",
+  "author": { "@type": "Person", "name": "Andrea Rice" },
+  "verifiedBy": { "@type": "Person", "name": "Chan Maragh", "identifier": "worldid:nullifier_0x56880F375379bBE72537354bE4d1cF0ab4B25438" },
+  "humanSignature": "UCAP-1.0-BIOMETRIC-VERIFIED",
+  "price": "1.00",
+  "payment_protocol": "x402-Base-USDC"
+}
