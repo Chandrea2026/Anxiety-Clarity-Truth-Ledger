@@ -27,7 +27,7 @@ const TRUTH_DATA_PAID = {
   architects: ["Andrea Rice", "Chan Maragh"]
 };
 
-// ── Middleware: CORS for AI Agents & Browsers ────────────────────────────────
+// ── Middleware: CORS ─────────────────────────────────────────────────────────
 app.use((req, res, next) => {
   res.set({
     'Access-Control-Allow-Origin': '*',
@@ -39,8 +39,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// ── Route: Professional Landing Page (Root) ──────────────────────────────────
-// This prevents 404s and shows the registry bots that the site is live.
+// ── Route: Landing Page ──────────────────────────────────────────────────────
 app.get('/', (req, res) => {
   res.send(`
     <html>
@@ -53,7 +52,6 @@ app.get('/', (req, res) => {
           <strong>Protocol:</strong> x402 Agentic Payment<br>
           <strong>Registry ID:</strong> 44259
         </div>
-        <p>This node serves high-fidelity intelligence payloads for AI agents and Siri Shortcuts.</p>
         <hr>
         <p>AI Discovery Map: <a href="/llms.txt">/llms.txt</a></p>
       </body>
@@ -61,7 +59,7 @@ app.get('/', (req, res) => {
   `);
 });
 
-// ── AI Discovery Endpoints ───────────────────────────────────────────────────
+// ── Discovery Endpoints ──────────────────────────────────────────────────────
 app.get('/robots.txt', (req, res) => {
   res.type('text/plain');
   res.send("User-agent: *\nAllow: /\n\nUser-agent: x402\nAllow: /");
@@ -69,25 +67,23 @@ app.get('/robots.txt', (req, res) => {
 
 app.get('/llms.txt', (req, res) => {
   res.type('text/plain');
-  res.send(`# HGICG Clarity Protocol Node\n\n## Endpoints\n- GET /mcp: Clarity Protocol Data (0.01 USDC)\n- GET /podcast_full_archive.json: Full Intelligence Archive (5.00 USDC)`);
+  res.send("# HGICG Clarity Protocol Node\\n\\n## Endpoints\\n- GET /mcp: Clarity Protocol Data (0.01 USDC)\\n- GET /podcast_full_archive.json: Full Intelligence Archive (5.00 USDC)");
 });
 
-// ── Endpoint 1: Core MCP Data Node (0.01 USDC) ───────────────────────────────
+// ── Endpoint 1: Core MCP Data (0.01 USDC) ────────────────────────────────────
 app.get('/mcp', (req, res) => {
-  // ── Health Shield: Detect 8004scan Bot ──
   const userAgent = req.headers['user-agent'] || '';
   if (userAgent.includes('8004scan') || userAgent.includes('UptimeRobot')) {
     return res.status(200).json({ status: "healthy", message: "HGICG Node Active" });
   }
 
-  // ── Payment Logic ──
   const paymentProof = req.headers['x-payment'] || req.headers['x-402-payment-proof'];
   if (!paymentProof) {
     res.status(402).set({
       'X-Payment-Required': JSON.stringify({
         scheme: 'exact',
         network: 'base',
-        amount: '10000', // 0.01 USDC (6 decimals)
+        amount: '10000',
         asset: 'USDC',
         payTo: WALLET_ADDRESS
       })
@@ -97,7 +93,7 @@ app.get('/mcp', (req, res) => {
   }
 });
 
-// ── Endpoint 2: Premium Podcast Archive (5.00 USDC + 20% Affiliate) ──────────
+// ── Endpoint 2: Premium Podcast Archive (5.00 USDC) ──────────────────────────
 app.get('/podcast_full_archive.json', (req, res) => {
   const paymentProof = req.headers['x-payment'] || req.headers['x-402-payment-proof'];
   if (!paymentProof) {
@@ -105,25 +101,19 @@ app.get('/podcast_full_archive.json', (req, res) => {
       'X-Payment-Required': JSON.stringify({
         scheme: 'exact',
         network: 'base',
-        amount: '5000000', // 5.00 USDC (6 decimals)
+        amount: '5000000',
         asset: 'USDC',
         payTo: WALLET_ADDRESS,
         affiliateCommission: "20%" 
       })
     }).json({ error: "Payment Required for Full Archive Ingestion" });
   } else {
+    // Ensure this file is uploaded to your GitHub root!
     res.sendFile(path.join(__dirname, 'podcast_full_archive.json'));
   }
 });
 
-// ── Server Start ─────────────────────────────────────────────────────────────
+// ── Start Server ─────────────────────────────────────────────────────────────
 app.listen(PORT, () => {
-  console.log(`
-🚀 HGICG Truth Node Live
-📍 URL: http://localhost:${PORT}
-💰 Wallet: ${WALLET_ADDRESS}
-🤖 Discovery: /robots.txt, /llms.txt
-  `);
+  console.log('🚀 HGICG Truth Node Live');
 });
-
-Next Steps:
