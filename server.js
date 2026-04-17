@@ -68,13 +68,13 @@ app.get('/robots.txt', (req, res) => {
 
 app.get('/llms.txt', (req, res) => {
   res.type('text/plain');
-  const content = \`# HGICG Clarity Protocol Node
+  const content = `# HGICG Clarity Protocol Node
 
 ## Endpoints
 - [PAID] GET /mcp: Clarity Protocol Data (0.01 USDC)
 - [PAID] GET /podcast_full_archive.json: Full Intelligence Archive (5.00 USDC)
 - [PAID] GET /universal_library.json: The Master Universal Library (10.00 USDC)
-- [PAID] GET /clarity_prompt_schema.json: Clarity Protocol Prompt Engine ($2.50 USDC)\`;
+- [PAID] GET /clarity_prompt_schema.json: Clarity Protocol Prompt Engine ($2.50 USDC)`;
   res.send(content);
 });
 
@@ -158,4 +158,7 @@ app.get('/clarity_prompt_schema.json', (req, res) => {
   }
 });
 
-app.listen(PORT, () => console.log('🚀 HGICG Truth Node Live'));
+// ── Server Start ─────────────────────────────────────────────────────────────
+app.listen(PORT, () => {
+  console.log('🚀 HGICG Truth Node Live');
+});
