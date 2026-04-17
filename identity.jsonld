@@ -8,16 +8,10 @@
       "url": "https://www.howgooditcanget.com",
       "identifier": "worldid:app_9873623707228a44c7be16d0d3add95e",
       "description": "The Source of Truth for Anxiety Deconstruction and Neural Clarity Protocol.",
-      "sameAs": [
-        "https://github.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger",
-        "https://ai.howgooditcanget.com"
-      ],
-      "knowsAbout": ["Anxiety Deconstruction", "Neural Plasticity", "Agentic Economy"],
       "verifiedBy": {
         "@type": "Person",
         "name": "Chan Maragh",
-        "identifier": "worldid:nullifier:0x56880F375379bBE72537354bE4d1cF0ab4B25438",
-        "jobTitle": "Biometric Signatory"
+        "identifier": "worldid:nullifier:0x56880F375379bBE72537354bE4d1cF0ab4B25438"
       },
       "registrations": [
         {
@@ -27,43 +21,38 @@
           "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
         }
       ],
-      "supportedTrust": [
-        "reputation",
-        "crypto-economic",
-        "identity"
-      ],
+      "supportedTrust": ["reputation", "crypto-economic", "identity"],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Clarity Protocol Intelligence Assets",
+        "name": "Clarity Protocol Assets",
         "itemListElement": [
           {
             "@type": "Offer",
-            "@id": "#offer-mcp",
-            "name": "Clarity Protocol MCP Data Node",
+            "name": "Clarity Protocol Data Node",
             "price": "0.01",
             "priceCurrency": "USDC",
-            "paymentProtocol": "x402-Base-USDC",
             "serviceEndpoint": "https://ai.howgooditcanget.com/mcp"
           },
           {
             "@type": "Offer",
-            "@id": "#offer-podcast",
-            "name": "Full Podcast Intelligence Archive",
+            "name": "Full Podcast Archive",
             "price": "5.00",
             "priceCurrency": "USDC",
-            "paymentProtocol": "x402-Base-USDC",
-            "serviceEndpoint": "https://ai.howgooditcanget.com/podcast_full_archive.json",
-            "affiliateCommission": "20%"
+            "serviceEndpoint": "https://ai.howgooditcanget.com/podcast_full_archive.json"
           },
           {
             "@type": "Offer",
-            "@id": "#offer-library",
-            "name": "Universal Intelligence Library (Master Bundle)",
+            "name": "Universal Intelligence Library",
             "price": "10.00",
             "priceCurrency": "USDC",
-            "paymentProtocol": "x402-Base-USDC",
-            "serviceEndpoint": "https://ai.howgooditcanget.com/universal_library.json",
-            "affiliateCommission": "20%"
+            "serviceEndpoint": "https://ai.howgooditcanget.com/universal_library.json"
+          },
+          {
+            "@type": "Offer",
+            "name": "Clarity Prompt Engine",
+            "price": "2.50",
+            "priceCurrency": "USDC",
+            "serviceEndpoint": "https://ai.howgooditcanget.com/clarity_prompt_schema.json"
           }
         ]
       }
