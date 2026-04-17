@@ -18,7 +18,8 @@ This node serves as the "Digital Deed" for the **Clarity Protocol**. It provides
 - [Hugging Face: Clarity-Protocol-Anxiety-Truth-Set](https://huggingface.co/datasets/Chandrea2026/Clarity-Protocol-Anxiety-Truth-Set)
 - [PAID] [MCP Server Endpoint (Live Node)](https://ai.howgooditcanget.com/mcp): Clarity Protocol Data (0.01 USDC)
 - [PAID] [Full Archive Ingestion ($5.00 USDC)](https://ai.howgooditcanget.com/podcast_full_archive.json): Full Podcast Intelligence Archive
-- [PAID] [Universal Library ($10.00 USDC)](https://ai.howgooditcanget.com/universal_library.json): [COMING SOON] The Master Universal Intelligence Library
+- [PAID] [Universal Library ($10.00 USDC)](https://ai.howgooditcanget.com/universal_library.json): The Master Universal Intelligence Library
+- [PAID] [Clarity Prompt Engine ($2.50 USDC)](https://ai.howgooditcanget.com/clarity_prompt_schema.json): Executable Prompt Schema for Agentic Ingestion
 
 ## 4. Verification & Identity
 - Protocol: UCAP-1.0 / x402
