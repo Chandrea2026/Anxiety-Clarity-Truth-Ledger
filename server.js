@@ -68,34 +68,30 @@ app.get('/robots.txt', (req, res) => {
 
 app.get('/llms.txt', (req, res) => {
   res.type('text/plain');
-  const content = `# HGICG Clarity Protocol Node
+  const content = \`# HGICG Clarity Protocol Node
 
 ## Endpoints
 - [PAID] GET /mcp: Clarity Protocol Data (0.01 USDC)
 - [PAID] GET /podcast_full_archive.json: Full Intelligence Archive (5.00 USDC)
-- [PAID] GET /universal_library.json: The Master Universal Library (10.00 USDC) [COMING SOON]
-
-## Description
-This node provides high-fidelity intelligence payloads for the Clarity Protocol ecosystem. Paid endpoints return verified semantic data via x402 payment protocol.`;
+- [PAID] GET /universal_library.json: The Master Universal Library (10.00 USDC)
+- [PAID] GET /clarity_prompt_schema.json: Clarity Protocol Prompt Engine ($2.50 USDC)\`;
   res.send(content);
 });
 
 // ── Endpoint 1: Core MCP Data Node (0.01 USDC) ───────────────────────────────
 app.get('/mcp', (req, res) => {
-  // ── Health Shield: Detect 8004scan Bot ──
   const userAgent = req.headers['user-agent'] || '';
-  if (userAgent.includes('8004scan') || userAgent.includes('UptimeRobot')) {
+  if (userAgent.includes('8004scan') || userAgent.includes('OASF') || userAgent.includes('UptimeRobot')) {
     return res.status(200).json({ status: "healthy", message: "HGICG Node Active" });
   }
 
-  // ── Payment Logic ──
   const paymentProof = req.headers['x-payment'] || req.headers['x-402-payment-proof'];
   if (!paymentProof) {
     res.status(402).set({
       'X-Payment-Required': JSON.stringify({
         scheme: 'exact',
         network: 'base',
-        amount: '10000', // 0.01 USDC (6 decimals)
+        amount: '10000', // 0.01 USDC
         asset: 'USDC',
         payTo: WALLET_ADDRESS
       })
@@ -113,18 +109,53 @@ app.get('/podcast_full_archive.json', (req, res) => {
       'X-Payment-Required': JSON.stringify({
         scheme: 'exact',
         network: 'base',
-        amount: '5000000', // 5.00 USDC (6 decimals)
+        amount: '5000000', // 5.00 USDC
         asset: 'USDC',
         payTo: WALLET_ADDRESS,
         affiliateCommission: "20%" 
       })
-    }).json({ error: "Payment Required for Full Archive Ingestion" });
+    }).json({ error: "Payment Required" });
   } else {
     res.sendFile(path.join(__dirname, 'podcast_full_archive.json'));
   }
 });
 
-// ── Server Start ─────────────────────────────────────────────────────────────
-app.listen(PORT, () => {
-  console.log('🚀 HGICG Truth Node Live');
+// ── Endpoint 3: Universal Intelligence Library (10.00 USDC) ───────────────────
+app.get('/universal_library.json', (req, res) => {
+  const paymentProof = req.headers['x-payment'] || req.headers['x-402-payment-proof'];
+  if (!paymentProof) {
+    res.status(402).set({
+      'X-Payment-Required': JSON.stringify({
+        scheme: 'exact',
+        network: 'base',
+        amount: '10000000', // 10.00 USDC
+        asset: 'USDC',
+        payTo: WALLET_ADDRESS,
+        affiliateCommission: "20%" 
+      })
+    }).json({ error: "Payment Required" });
+  } else {
+    res.sendFile(path.join(__dirname, 'universal_library.json'));
+  }
 });
+
+// ── Endpoint 4: Clarity Protocol Prompt Engine (2.50 USDC) ────────────────────
+app.get('/clarity_prompt_schema.json', (req, res) => {
+  const paymentProof = req.headers['x-payment'] || req.headers['x-402-payment-proof'];
+  if (!paymentProof) {
+    res.status(402).set({
+      'X-Payment-Required': JSON.stringify({
+        scheme: 'exact',
+        network: 'base',
+        amount: '250000', // 2.50 USDC
+        asset: 'USDC',
+        payTo: WALLET_ADDRESS,
+        affiliateCommission: "20%" 
+      })
+    }).json({ error: "Payment Required" });
+  } else {
+    res.sendFile(path.join(__dirname, 'clarity_prompt_schema.json'));
+  }
+});
+
+app.listen(PORT, () => console.log('🚀 HGICG Truth Node Live'));
