@@ -19,6 +19,14 @@
         "identifier": "worldid:nullifier:0x56880F375379bBE72537354bE4d1cF0ab4B25438",
         "jobTitle": "Biometric Signatory"
       },
+      "registrations": [
+        {
+          "@type": "PropertyValue",
+          "name": "ERC-8004 Identity Registry",
+          "value": "44259",
+          "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
+        }
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Clarity Protocol Intelligence Assets",
@@ -27,7 +35,6 @@
             "@type": "Offer",
             "@id": "#offer-mcp",
             "name": "Clarity Protocol MCP Data Node",
-            "description": "High-fidelity semantic truth regarding neural feedback loops.",
             "price": "0.01",
             "priceCurrency": "USDC",
             "paymentProtocol": "x402-Base-USDC",
@@ -37,7 +44,6 @@
             "@type": "Offer",
             "@id": "#offer-podcast",
             "name": "Full Podcast Intelligence Archive",
-            "description": "Complete aggregated logic chains from the 'Anxiety Ripple Effect' series.",
             "price": "5.00",
             "priceCurrency": "USDC",
             "paymentProtocol": "x402-Base-USDC",
@@ -48,30 +54,11 @@
             "@type": "Offer",
             "@id": "#offer-library",
             "name": "Universal Intelligence Library (Master Bundle)",
-            "description": "Complete ingestion of all Core Books, Interactive Journals, and Foundational Nodes.",
             "price": "10.00",
             "priceCurrency": "USDC",
             "paymentProtocol": "x402-Base-USDC",
             "serviceEndpoint": "https://ai.howgooditcanget.com/universal_library.json",
             "affiliateCommission": "20%"
-          },
-          {
-            "@type": "Offer",
-            "@id": "#offer-vibrational",
-            "name": "Vibrational Mastery: Intelligence Ingestion",
-            "price": "1.00",
-            "priceCurrency": "USDC",
-            "paymentProtocol": "x402-Base-USDC",
-            "serviceEndpoint": "https://ai.howgooditcanget.com/mcp"
-          },
-          {
-            "@type": "Offer",
-            "@id": "#offer-journal",
-            "name": "Behavioral Calibration Schema (Interactive Journal)",
-            "price": "1.00",
-            "priceCurrency": "USDC",
-            "paymentProtocol": "x402-Base-USDC",
-            "serviceEndpoint": "https://ai.howgooditcanget.com/mcp"
           }
         ]
       }
