@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "How Good It Can Get: Universal Intelligence Library",
+  "description": "The Master Asset containing all verified semantic truth for the HGICG ecosystem. Includes Podcast Intelligence, Foundational Books, and Protocol Manuals.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "How Good It Can Get",
+    "url": "https://www.howgooditcanget.com",
+    "identifier": "worldid:app_9873623707228a44c7be16d0d3add95e"
+  },
+  "contains": [
+    {
+      "name": "Full Podcast Intelligence Archive",
+      "price": "5.00",
+      "currency": "USDC",
+      "description": "Canonical semantic data for the Ripple Effect series and the Clarity Mandate."
+    },
+    {
+      "name": "Vibrational Mastery: A High Vibration is Your Superpower",
+      "author": "Andrea Rice",
+      "summary": "Everything is energy. Vibration is the oscillation of energy. High vibrations (joy, love, gratitude) attract health and wealth."
+    },
+    {
+      "name": "The Clarity Protocol: Neural Deconstruction of Anxiety",
+      "summary": "Anxiety is treated as hardware noise—a habituated neural loop—rather than a permanent defect.",
+      "logic_chains": [
+        "The 5-Second Neural Plasticity Gap",
+        "Hardware Noise vs. Human Essence"
+      ]
+    }
+  ],
+  "humanSignature": "UCAP-1.0-BIOMETRIC-VERIFIED-MASTER",
+  "price": "10.00",
+  "currency": "USDC"
+}
