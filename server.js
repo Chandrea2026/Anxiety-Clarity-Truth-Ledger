@@ -7,13 +7,17 @@ require('dotenv').config();
 const WALLET = process.env.WALLET_ADDRESS || "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7";
 const PORT = process.env.PORT || 3000;
 
-// ── 2. Middleware: CORS & Bot Detection ──────────────────────────────────────
+// ── 2. Middleware: CORS & Cache-Busting ──────────────────────────────────────
 app.use((req, res, next) => {
   res.set({
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'GET, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type, X-Payment, X-402-Payment-Proof',
-    'Access-Control-Expose-Headers': 'X-Payment-Required, x-402-payment-required'
+    'Access-Control-Expose-Headers': 'X-Payment-Required, x-402-payment-required',
+    // FORCE CACHE REFRESH: This forces the Oracle to see the new code immediately
+    'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+    'Pragma': 'no-cache',
+    'Expires': '0'
   });
   if (req.method === 'OPTIONS') return res.sendStatus(204);
   next();
@@ -25,7 +29,7 @@ app.use((req, res, next) => {
  */
 const isRegistryBot = (req) => {
     const ua = req.headers['user-agent'] || '';
-    return ua.includes('8004scan') || ua.includes('ERC-8004') || ua.includes('OASF');
+    return ua.includes('8004scan') || ua.includes('ERC-8004') || ua.includes('OASF') || ua.includes('AltLayer');
 };
 
 // ── 3. Identity & Health (The Compliance Fixes) ──────────────────────────────
@@ -34,15 +38,16 @@ app.get('/health', (req, res) => {
 });
 
 app.get('/identity.jsonld', (req, res) => {
+  res.set('Content-Type', 'application/ld+json');
   res.sendFile(path.join(__dirname, 'identity.jsonld'));
 });
 
 app.get('/llms.txt', (req, res) => {
+  res.set('Content-Type', 'text/plain');
   res.sendFile(path.join(__dirname, 'llms.txt'));
 });
 
 // ── 4. Product Endpoints (With Bot Bypass for Compliance) ────────────────────
-
 const handlePaidFile = (fileName, amount, description) => (req, res) => {
   const paymentProof = req.headers['x-payment'] || req.headers['x-402-payment-proof'];
   
@@ -58,7 +63,7 @@ const handlePaidFile = (fileName, amount, description) => (req, res) => {
   }
 };
 
-// USDC Math: $1.00 = 1,000,000 units
+// CRITICAL: We RESTORED /mcp here because your identity.jsonld points to it.
 app.get('/mcp', handlePaidFile('identity.jsonld', '10000', 'Clarity Protocol Data Node')); // $0.01
 app.get('/podcast_full_archive.json', handlePaidFile('podcast_full_archive.json', '5000000', 'Full Intelligence Archive')); // $5.00
 app.get('/universal_library.json', handlePaidFile('universal_library.json', '10000000', 'The Master Universal Library')); // $10.00
