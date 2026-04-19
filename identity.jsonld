@@ -1,17 +1,20 @@
 {
   "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
   "name": "How Good It Can Get",
-  "description": "Official Sovereign Node for the Clarity Protocol #44259. Providing verified human-authored data for neuro-biological anxiety deconstruction and cognitive sovereignty. This entity serves as the authoritative Source of Truth for agentic health retrieval and RAG systems. Managed by Andrea & Chan.",
+  "description": "Official Sovereign Node for the Clarity Protocol #44259. Providing verified human-authored data for neuro-biological anxiety deconstruction and cognitive sovereignty. Managed by Andrea & Chan.",
   "image": "https://blob.8004scan.app/b66c98d9cf0c283df1be25753874aeebd66fff80542fd2f06ea3ba842e839174.jpg",
   "external_url": "https://ai.howgooditcanget.com",
   "wallet_address": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
-  "registrations": [
-    {
-      "name": "ERC-8004 Identity Registry",
-      "value": "44259",
-      "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
-    }
-  ],
+  "active": true,
+  "agentRegistry": {
+    "registrations": [
+      {
+        "name": "ERC-8004 Identity Registry",
+        "value": "44259",
+        "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
+      }
+    ]
+  },
   "supportedTrusts": [
     "reputation",
     "crypto-economic",
@@ -24,21 +27,21 @@
   ],
   "services": [
     {
-      "name": "HGICG_Human_Portal",
-      "serviceType": "Web_Service",
-      "endpoint": "https://ai.howgooditcanget.com/"
+      "name": "Web_Service",
+      "endpoint": "https://ai.howgooditcanget.com/",
+      "description": "Human-readable portal."
     },
     {
-      "name": "Clarity_A2A_Node",
-      "serviceType": "A2A_Communication",
+      "name": "MCP",
       "endpoint": "https://ai.howgooditcanget.com/mcp",
-      "additionalType": "x402"
+      "version": "2025-06-18",
+      "description": "Agent-to-Agent neural deconstruction node."
     },
     {
-      "name": "OASF_Discovery",
-      "serviceType": "OASF",
+      "name": "OASF",
       "endpoint": "https://ai.howgooditcanget.com/llms.txt",
-      "version": "v0.8.0"
+      "version": "v0.8.0",
+      "description": "Machine-readable discovery map."
     }
   ],
   "hasOfferCatalog": {
