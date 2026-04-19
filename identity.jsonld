@@ -1,94 +1,90 @@
 {
   "@context": "https://schema.org",
-  "@graph": [
+  "@type": "Organization",
+  "@id": "https://www.howgooditcanget.com/#organization",
+  "name": "How Good It Can Get",
+  "url": "https://www.howgooditcanget.com",
+  "identifier": "worldid:app_9873623707228a44c7be16d0d3add95e",
+  "description": "Official Sovereign Node for the Clarity Protocol. Providing verified human-authored data for neuro-biological anxiety deconstruction and cognitive sovereignty.",
+  "sameAs": [
+    "https://github.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger",
+    "https://ai.howgooditcanget.com"
+  ],
+  "verifiedBy": {
+    "@type": "Person",
+    "name": "Chan Maragh",
+    "identifier": "worldid:nullifier:0x56880F375379bBE72537354bE4d1cF0ab4B25438"
+  },
+  "registrations": [
     {
-      "@type": "Organization",
-      "@id": "https://www.howgooditcanget.com/#organization",
-      "name": "How Good It Can Get",
-      "url": "https://www.howgooditcanget.com",
-      "identifier": "worldid:app_9873623707228a44c7be16d0d3add95e",
-      "description": "The Source of Truth for Anxiety Deconstruction and Neural Clarity Protocol.",
-      "sameAs": [
-        "https://github.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger",
-        "https://ai.howgooditcanget.com"
-      ],
-      "verifiedBy": {
-        "@type": "Person",
-        "name": "Chan Maragh",
-        "identifier": "worldid:nullifier:0x56880F375379bBE72537354bE4d1cF0ab4B25438"
-      },
-      "registrations": [
-        {
-          "@type": "PropertyValue",
-          "name": "ERC-8004 Identity Registry",
-          "value": "44259",
-          "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
-        }
-      ],
-      "supportedTrust": [
-        "reputation",
-        "crypto-economic",
-        "identity"
-      ],
-      "services": [
-        {
-          "@type": "Service",
-          "name": "HGICG_Human_Portal",
-          "serviceType": "Web_Service",
-          "url": "https://ai.howgooditcanget.com/",
-          "description": "Professional human-readable landing page for Clarity Protocol discovery."
-        },
-        {
-          "@type": "Service",
-          "name": "Clarity_A2A_Node",
-          "serviceType": "A2A_Communication",
-          "url": "https://ai.howgooditcanget.com/mcp",
-          "additionalType": "x402",
-          "description": "Direct machine-to-machine ingestion of neural deconstruction logic."
-        },
-        {
-          "@type": "Service",
-          "name": "OASF_Discovery",
-          "serviceType": "OASF",
-          "version": "v0.8.0",
-          "url": "https://ai.howgooditcanget.com/llms.txt",
-          "description": "Open Agentic Schema for machine-readable skill discovery."
-        }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Clarity Protocol Assets",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "name": "Clarity Protocol Data Node",
-            "price": "0.01",
-            "priceCurrency": "USDC",
-            "serviceEndpoint": "https://ai.howgooditcanget.com/mcp"
-          },
-          {
-            "@type": "Offer",
-            "name": "Full Podcast Archive",
-            "price": "5.00",
-            "priceCurrency": "USDC",
-            "serviceEndpoint": "https://ai.howgooditcanget.com/podcast_full_archive.json"
-          },
-          {
-            "@type": "Offer",
-            "name": "Universal Intelligence Library",
-            "price": "10.00",
-            "priceCurrency": "USDC",
-            "serviceEndpoint": "https://ai.howgooditcanget.com/universal_library.json"
-          },
-          {
-            "@type": "Offer",
-            "name": "Clarity Prompt Engine",
-            "price": "2.50",
-            "priceCurrency": "USDC",
-            "serviceEndpoint": "https://ai.howgooditcanget.com/clarity_prompt_schema.json"
-          }
-        ]
-      }
+      "@type": "PropertyValue",
+      "name": "ERC-8004 Identity Registry",
+      "value": "44259",
+      "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
     }
-  ]
+  ],
+  "supportedTrusts": [
+    "reputation",
+    "crypto-economic",
+    "identity"
+  ],
+  "services": [
+    {
+      "@type": "Service",
+      "name": "HGICG_Human_Portal",
+      "serviceType": "Web_Service",
+      "url": "https://ai.howgooditcanget.com/",
+      "description": "Professional human-readable landing page for Clarity Protocol discovery."
+    },
+    {
+      "@type": "Service",
+      "name": "Clarity_A2A_Node",
+      "serviceType": "A2A_Communication",
+      "url": "https://ai.howgooditcanget.com/mcp",
+      "additionalType": "x402",
+      "description": "Direct machine-to-machine ingestion of neural deconstruction logic."
+    },
+    {
+      "@type": "Service",
+      "name": "OASF_Discovery",
+      "serviceType": "OASF",
+      "version": "v0.8.0",
+      "url": "https://ai.howgooditcanget.com/llms.txt",
+      "description": "Open Agentic Schema for machine-readable skill discovery."
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Clarity Protocol Assets",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Clarity Protocol Data Node",
+        "price": "0.01",
+        "priceCurrency": "USDC",
+        "serviceEndpoint": "https://ai.howgooditcanget.com/mcp"
+      },
+      {
+        "@type": "Offer",
+        "name": "Full Podcast Archive",
+        "price": "5.00",
+        "priceCurrency": "USDC",
+        "serviceEndpoint": "https://ai.howgooditcanget.com/podcast_full_archive.json"
+      },
+      {
+        "@type": "Offer",
+        "name": "Universal Intelligence Library",
+        "price": "10.00",
+        "priceCurrency": "USDC",
+        "serviceEndpoint": "https://ai.howgooditcanget.com/universal_library.json"
+      },
+      {
+        "@type": "Offer",
+        "name": "Clarity Prompt Engine",
+        "price": "2.50",
+        "priceCurrency": "USDC",
+        "serviceEndpoint": "https://ai.howgooditcanget.com/clarity_prompt_schema.json"
+      }
+    ]
+  }
 }
