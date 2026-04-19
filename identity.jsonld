@@ -4,6 +4,7 @@
   "@id": "https://www.howgooditcanget.com/#organization",
   "name": "How Good It Can Get",
   "url": "https://www.howgooditcanget.com",
+  "image": "https://blob.8004scan.app/b66c98d9cf0c283df1be25753874aeebd66fff80542fd2f06ea3ba842e839174.jpg",
   "identifier": "worldid:app_9873623707228a44c7be16d0d3add95e",
   "description": "Official Sovereign Node for the Clarity Protocol. Providing verified human-authored data for neuro-biological anxiety deconstruction and cognitive sovereignty.",
   "sameAs": [
