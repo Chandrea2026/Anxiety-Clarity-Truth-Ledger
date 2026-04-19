@@ -29,12 +29,18 @@
     "crypto-economic",
     "identity"
   ],
+  "capabilities": [
+    "A2A_Communication",
+    "Web_Service",
+    "OASF"
+  ],
   "services": [
     {
       "@type": "Service",
       "name": "HGICG_Human_Portal",
       "serviceType": "Web_Service",
       "url": "https://ai.howgooditcanget.com/",
+      "endpoint": "https://ai.howgooditcanget.com/",
       "description": "Professional human-readable landing page for Clarity Protocol discovery."
     },
     {
@@ -42,6 +48,7 @@
       "name": "Clarity_A2A_Node",
       "serviceType": "A2A_Communication",
       "url": "https://ai.howgooditcanget.com/mcp",
+      "endpoint": "https://ai.howgooditcanget.com/mcp",
       "additionalType": "x402",
       "description": "Direct machine-to-machine ingestion of neural deconstruction logic."
     },
@@ -49,8 +56,9 @@
       "@type": "Service",
       "name": "OASF_Discovery",
       "serviceType": "OASF",
-      "version": "v0.8.0",
       "url": "https://ai.howgooditcanget.com/llms.txt",
+      "endpoint": "https://ai.howgooditcanget.com/llms.txt",
+      "version": "v0.8.0",
       "description": "Open Agentic Schema for machine-readable skill discovery."
     }
   ],
