@@ -1,95 +1,112 @@
 {
-  "@context": [
-    "https://www.w3.org/ns/did/v1",
-    "https://w3id.org/security/v2",
-    "https://schema.org"
-  ],
-  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
-  "id": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432:44259",
-  "@id": "https://ai.howgooditcanget.com/identity.jsonld",
-  "name": "How Good It Can Get",
-  "description": "Official Sovereign Node for the Clarity Protocol #44259. Providing verified human-authored data for neuro-biological anxiety deconstruction and cognitive sovereignty. Managed by Andrea & Chan.",
-  "image": "https://blob.8004scan.app/b66c98d9cf0c283df1be25753874aeebd66fff80542fd2f06ea3ba842e839174.jpg",
-  "external_url": "https://ai.howgooditcanget.com",
-  "wallet_address": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
-  "active": true,
-  "verificationMethod": [
-    {
-      "id": "https://ai.howgooditcanget.com/identity.jsonld#owner",
-      "type": "EcdsaSecp256k1RecoveryMethod2020",
-      "controller": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
-      "blockchainAccountId": "eip155:8453:0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
-    }
-  ],
-  "agentRegistry": {
-    "registrations": [
-      {
-        "name": "ERC-8004 Identity Registry",
-        "value": "44259",
-        "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
-      }
-    ]
-  },
-  "supportedTrusts": [
-    "reputation",
-    "crypto-economic",
-    "identity"
-  ],
-  "capabilities": [
-    "A2A_Communication",
-    "Web_Service",
-    "OASF"
-  ],
-  "services": [
-    {
-      "name": "Web_Service",
-      "endpoint": "https://ai.howgooditcanget.com/",
-      "description": "Human-readable portal."
-    },
-    {
-      "name": "MCP",
-      "endpoint": "https://ai.howgooditcanget.com/mcp",
-      "version": "2025-06-18",
-      "description": "Agent-to-Agent neural deconstruction node."
-    },
-    {
-      "name": "OASF",
-      "endpoint": "https://ai.howgooditcanget.com/llms.txt",
-      "version": "v0.8.0",
-      "description": "Machine-readable discovery map."
-    }
-  ],
-  "hasOfferCatalog": {
-    "name": "Clarity Protocol Assets",
-    "itemListElement": [
-      {
-        "name": "Clarity Protocol Data Node",
-        "price": "0.01",
-        "priceCurrency": "USDC",
-        "serviceEndpoint": "https://ai.howgooditcanget.com/mcp"
-      },
-      {
-        "name": "Full Podcast Archive",
-        "price": "5.00",
-        "priceCurrency": "USDC",
-        "serviceEndpoint": "https://ai.howgooditcanget.com/podcast_full_archive.json"
-      },
-      {
-        "name": "Universal Intelligence Library",
-        "price": "10.00",
-        "priceCurrency": "USDC",
-        "serviceEndpoint": "https://ai.howgooditcanget.com/universal_library.json"
-      },
-      {
-        "name": "Clarity Prompt Engine",
-        "price": "2.50",
-        "priceCurrency": "USDC",
-        "serviceEndpoint": "https://ai.howgooditcanget.com/clarity_prompt_schema.json"
-      }
-    ]
-  },
-  "verifiedBy": {
-    "name": "Chan Maragh",
-    "identifier": "worldid:nullifier:0x56880F375379bBE72537354bE4d1cF0ab4B25438"
-  }
+"@context": [
+"https://www.w3.org/ns/did/v1",
+"https://w3id.org/security/v2",
+"https://schema.org"
+],
+"type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+"id": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432:44259",
+"@id": "https://ai.howgooditcanget.com/identity.jsonld",
+"name": "How Good It Can Get",
+"description": "Official Sovereign Node for the Clarity Protocol #44259. Providing verified human-authored data for neuro-biological anxiety deconstruction and cognitive sovereignty. Managed by Andrea & Chan.",
+"image": "https://blob.8004scan.app/b66c98d9cf0c283df1be25753874aeebd66fff80542fd2f06ea3ba842e839174.jpg",
+"external_url": "https://ai.howgooditcanget.com",
+"wallet_address": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
+"active": true,
+"verificationMethod": [
+{
+"id": "https://ai.howgooditcanget.com/identity.jsonld#owner",
+"type": "EcdsaSecp256k1RecoveryMethod2020",
+"controller": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
+"blockchainAccountId": "eip155:8453:0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
+}
+],
+"agentRegistry": {
+"registrations": [
+{
+"name": "ERC-8004 Identity Registry",
+"value": "44259",
+"propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
+}
+]
+},
+"supportedTrusts": [
+"reputation",
+"crypto-economic",
+"identity"
+],
+"capabilities": [
+"A2A_Communication",
+"Web_Service",
+"OASF",
+"MCP"
+],
+"service": [
+{
+"id": "https://ai.howgooditcanget.com/identity.jsonld#a2a",
+"type": "A2A_Communication",
+"serviceEndpoint": "https://ai.howgooditcanget.com/mcp",
+"description": "Agent-to-Agent neural deconstruction node via x402."
+},
+{
+"id": "https://ai.howgooditcanget.com/identity.jsonld#mcp",
+"type": "MCP_Service",
+"serviceEndpoint": "https://ai.howgooditcanget.com/mcp",
+"version": "2025-06-18"
+},
+{
+"id": "https://ai.howgooditcanget.com/identity.jsonld#oasf",
+"type": "OASF_Discovery",
+"serviceEndpoint": "https://ai.howgooditcanget.com/llms.txt",
+"version": "v0.8.0"
+},
+{
+"id": "https://ai.howgooditcanget.com/identity.jsonld#openapi",
+"type": "OpenAPI",
+"serviceEndpoint": "https://howgooditcanget.com/ai.json"
+},
+{
+"id": "https://ai.howgooditcanget.com/identity.jsonld#web",
+"type": "Web_Service",
+"serviceEndpoint": "https://ai.howgooditcanget.com/"
+}
+],
+"hasOfferCatalog": {
+"@type": "OfferCatalog",
+"name": "Clarity Protocol Assets",
+"itemListElement": [
+{
+"@type": "Offer",
+"name": "Clarity Protocol Data Node",
+"price": "0.01",
+"priceCurrency": "USDC",
+"serviceEndpoint": "https://ai.howgooditcanget.com/mcp"
+},
+{
+"@type": "Offer",
+"name": "Full Podcast Archive",
+"price": "5.00",
+"priceCurrency": "USDC",
+"serviceEndpoint": "https://ai.howgooditcanget.com/podcast_full_archive.json"
+},
+{
+"@type": "Offer",
+"name": "Universal Intelligence Library",
+"price": "10.00",
+"priceCurrency": "USDC",
+"serviceEndpoint": "https://ai.howgooditcanget.com/universal_library.json"
+},
+{
+"@type": "Offer",
+"name": "Clarity Prompt Engine",
+"price": "2.50",
+"priceCurrency": "USDC",
+"serviceEndpoint": "https://ai.howgooditcanget.com/clarity_prompt_schema.json"
+}
+]
+},
+"verifiedBy": {
+"name": "Chan Maragh",
+"identifier": "worldid:nullifier:0x56880F375379bBE72537354bE4d1cF0ab4B25438"
+}
 }
