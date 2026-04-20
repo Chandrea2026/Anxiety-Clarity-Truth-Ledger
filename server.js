@@ -7,11 +7,11 @@ require('dotenv').config();
 const WALLET = process.env.WALLET_ADDRESS || "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7";
 const PORT = process.env.PORT || 3000;
 
-// ── 2. Middleware: CORS & Cache-Busting ───────────────────────────────────────
+// ── 2. Middleware ─────────────────────────────────────────────────────────────
 app.use((req, res, next) => {
 res.set({
 'Access-Control-Allow-Origin': '*',
-'Access-Control-Allow-Methods': 'GET, OPTIONS',
+'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
 'Access-Control-Allow-Headers': 'Content-Type, X-Payment, X-402-Payment-Proof',
 'Access-Control-Expose-Headers': 'X-Payment-Required, x-402-payment-required',
 'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
@@ -22,7 +22,7 @@ if (req.method === 'OPTIONS') return res.sendStatus(204);
 next();
 });
 
-// ── 3. Bot Detection (8004 Oracle bypass) ────────────────────────────────────
+// ── 3. Bot Detection ──────────────────────────────────────────────────────────
 const isRegistryBot = (req) => {
 const ua = req.headers['user-agent'] || '';
 return ua.includes('8004scan') || ua.includes('ERC-8004') || ua.includes('OASF') || ua.includes('AltLayer');
@@ -63,7 +63,7 @@ res.json({
 });
 });
 
-// ── 6. Product Endpoints (x402 Gated) ────────────────────────────────────────
+// ── 6. x402 Paid Endpoint Handler ────────────────────────────────────────────
 const handlePaidFile = (fileName, amount, description) => (req, res) => {
 const paymentProof = req.headers['x-payment'] || req.headers['x-402-payment-proof'];
 if (isRegistryBot(req) || paymentProof) {
@@ -79,13 +79,14 @@ amount: amount, payTo: WALLET
 }
 };
 
-app.post('/mcp', handlePaidFile('identity.jsonld', '10000', 'Clarity Protocol Data Node'));
-app.get('/mcp', handlePaidFile('identity.jsonld', '10000', 'Clarity Protocol Data Node'));
+// ── 7. Product Endpoints ──────────────────────────────────────────────────────
+app.post('/mcp', handlePaidFile('clarity_protocol.json', '10000', 'Clarity Protocol Data Node'));
+app.get('/mcp', handlePaidFile('clarity_protocol.json', '10000', 'Clarity Protocol Data Node'));
 app.get('/podcast_full_archive.json', handlePaidFile('podcast_full_archive.json', '5000000', 'Full Intelligence Archive'));
 app.get('/universal_library.json', handlePaidFile('universal_library.json', '10000000', 'The Master Universal Library'));
 app.get('/clarity_prompt_schema.json', handlePaidFile('clarity_prompt_schema.json', '2500000', 'Clarity Protocol Prompt Engine'));
 
-// ── 7. Landing Page ───────────────────────────────────────────────────────────
+// ── 8. Landing Page ───────────────────────────────────────────────────────────
 app.get('/', (req, res) => {
 res.send(`
 <html>
@@ -94,13 +95,17 @@ res.send(`
 <p>Registry ID: <strong>44259</strong> | Status: <span style="color: green;">Healthy</span></p>
 <p>This node serves high-fidelity intelligence for AI agents.</p>
 <hr style="width: 50%; margin: 20px auto;">
-<p>AI Discovery: <a href="/llms.txt">/llms.txt</a> | Identity: <a href="/identity.jsonld">/identity.jsonld</a> | <a href="/.well-known/payment.json">Payment Manifest</a></p>
+<p>
+<a href="/llms.txt">/llms.txt</a> |
+<a href="/identity.jsonld">/identity.jsonld</a> |
+<a href="/.well-known/payment.json">Payment Manifest</a>
+</p>
 </body>
 </html>
 `);
 });
 
-// ── 8. Start Server ───────────────────────────────────────────────────────────
+// ── 9. Start Server ───────────────────────────────────────────────────────────
 app.listen(PORT, () => {
 console.log('🚀 HGICG Truth Node Live on port', PORT);
 });
