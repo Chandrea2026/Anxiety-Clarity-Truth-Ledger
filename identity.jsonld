@@ -4,7 +4,7 @@
     "https://w3id.org/security/v2",
     "https://schema.org"
   ],
-  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "@type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
   "id": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432:44259",
   "@id": "https://ai.howgooditcanget.com/identity.jsonld",
   "name": "How Good It Can Get",
@@ -13,7 +13,12 @@
   "external_url": "https://ai.howgooditcanget.com",
   "wallet_address": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
   "active": true,
-  "x402Support": true,
+  "registrations": [
+    {
+      "registry": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+      "tokenId": "44259"
+    }
+  ],
   "verificationMethod": [
     {
       "id": "https://ai.howgooditcanget.com/identity.jsonld#owner",
@@ -31,48 +36,45 @@
       }
     ]
   },
-  "supportedTrusts": [
+  "supportedTrust": [
     "reputation",
     "crypto-economic",
     "identity"
   ],
   "capabilities": [
-    "A2A",
-    "MCP",
+    "A2A_Communication",
+    "Web_Service",
     "OASF",
-    "web"
+    "MCP"
   ],
-  "services": [
+  "service": [
     {
       "id": "https://ai.howgooditcanget.com/identity.jsonld#a2a",
-      "type": "A2A",
-      "serviceEndpoint": "https://ai.howgooditcanget.com/mcp",
+      "type": "A2A_Communication",
+      "endpoint": "https://ai.howgooditcanget.com/mcp",
       "description": "Agent-to-Agent neural deconstruction node via x402."
     },
     {
       "id": "https://ai.howgooditcanget.com/identity.jsonld#mcp",
-      "type": "MCP",
-      "serviceEndpoint": "https://ai.howgooditcanget.com/mcp",
+      "type": "MCP_Service",
+      "endpoint": "https://ai.howgooditcanget.com/mcp",
       "version": "2025-06-18"
     },
     {
       "id": "https://ai.howgooditcanget.com/identity.jsonld#oasf",
-      "type": "OASF",
-      "serviceEndpoint": "https://ai.howgooditcanget.com/llms.txt",
+      "type": "OASF_Discovery",
+      "endpoint": "https://ai.howgooditcanget.com/llms.txt",
       "version": "v0.8.0"
     },
     {
-      "id": "https://ai.howgooditcanget.com/identity.jsonld#wallet",
-      "type": "agentWallet",
-      "serviceEndpoint": "https://ai.howgooditcanget.com/.well-known/payment.json",
-      "network": "base",
-      "asset": "USDC",
-      "wallet": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
+      "id": "https://ai.howgooditcanget.com/identity.jsonld#openapi",
+      "type": "OpenAPI",
+      "endpoint": "https://ai.howgooditcanget.com/ai.json"
     },
     {
       "id": "https://ai.howgooditcanget.com/identity.jsonld#web",
-      "type": "web",
-      "serviceEndpoint": "https://ai.howgooditcanget.com/"
+      "type": "Web_Service",
+      "endpoint": "https://ai.howgooditcanget.com/"
     }
   ],
   "hasOfferCatalog": {
