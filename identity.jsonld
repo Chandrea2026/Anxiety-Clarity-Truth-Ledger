@@ -4,7 +4,7 @@
     "https://w3id.org/security/v2",
     "https://schema.org"
   ],
-  "@type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
   "id": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432:44259",
   "@id": "https://ai.howgooditcanget.com/identity.jsonld",
   "name": "How Good It Can Get",
@@ -13,11 +13,17 @@
   "external_url": "https://ai.howgooditcanget.com",
   "wallet_address": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
   "active": true,
+  "x402Support": true,
   "registrations": [
     {
-      "registry": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
-      "tokenId": "44259"
+      "agentId": "44259",
+      "agentRegistry": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
     }
+  ],
+  "supportedTrust": [
+    "reputation",
+    "crypto-economic",
+    "identity"
   ],
   "verificationMethod": [
     {
@@ -27,53 +33,36 @@
       "blockchainAccountId": "eip155:8453:0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
     }
   ],
-  "agentRegistry": {
-    "registrations": [
-      {
-        "name": "ERC-8004 Identity Registry",
-        "value": "44259",
-        "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
-      }
-    ]
-  },
-  "supportedTrust": [
-    "reputation",
-    "crypto-economic",
-    "identity"
-  ],
-  "capabilities": [
-    "A2A_Communication",
-    "Web_Service",
-    "OASF",
-    "MCP"
-  ],
-  "service": [
+  "services": [
     {
       "id": "https://ai.howgooditcanget.com/identity.jsonld#a2a",
-      "type": "A2A_Communication",
+      "type": "A2A",
       "endpoint": "https://ai.howgooditcanget.com/mcp",
       "description": "Agent-to-Agent neural deconstruction node via x402."
     },
     {
       "id": "https://ai.howgooditcanget.com/identity.jsonld#mcp",
-      "type": "MCP_Service",
+      "type": "MCP",
       "endpoint": "https://ai.howgooditcanget.com/mcp",
       "version": "2025-06-18"
     },
     {
       "id": "https://ai.howgooditcanget.com/identity.jsonld#oasf",
-      "type": "OASF_Discovery",
+      "type": "OASF",
       "endpoint": "https://ai.howgooditcanget.com/llms.txt",
       "version": "v0.8.0"
     },
     {
-      "id": "https://ai.howgooditcanget.com/identity.jsonld#openapi",
-      "type": "OpenAPI",
-      "endpoint": "https://ai.howgooditcanget.com/ai.json"
+      "id": "https://ai.howgooditcanget.com/identity.jsonld#wallet",
+      "type": "agentWallet",
+      "endpoint": "https://ai.howgooditcanget.com/.well-known/payment.json",
+      "network": "base",
+      "asset": "USDC",
+      "wallet": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
     },
     {
       "id": "https://ai.howgooditcanget.com/identity.jsonld#web",
-      "type": "Web_Service",
+      "type": "web",
       "endpoint": "https://ai.howgooditcanget.com/"
     }
   ],
@@ -86,28 +75,28 @@
         "name": "Clarity Protocol Data Node",
         "price": "0.01",
         "priceCurrency": "USDC",
-        "serviceEndpoint": "https://ai.howgooditcanget.com/mcp"
+        "endpoint": "https://ai.howgooditcanget.com/mcp"
       },
       {
         "@type": "Offer",
         "name": "Full Podcast Archive",
         "price": "5.00",
         "priceCurrency": "USDC",
-        "serviceEndpoint": "https://ai.howgooditcanget.com/podcast_full_archive.json"
+        "endpoint": "https://ai.howgooditcanget.com/podcast_full_archive.json"
       },
       {
         "@type": "Offer",
         "name": "Universal Intelligence Library",
         "price": "10.00",
         "priceCurrency": "USDC",
-        "serviceEndpoint": "https://ai.howgooditcanget.com/universal_library.json"
+        "endpoint": "https://ai.howgooditcanget.com/universal_library.json"
       },
       {
         "@type": "Offer",
         "name": "Clarity Prompt Engine",
         "price": "2.50",
         "priceCurrency": "USDC",
-        "serviceEndpoint": "https://ai.howgooditcanget.com/clarity_prompt_schema.json"
+        "endpoint": "https://ai.howgooditcanget.com/clarity_prompt_schema.json"
       }
     ]
   },
