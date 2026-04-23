@@ -1,0 +1,12 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "How Good It Can Get API",
+    "version": "1.0.0"
+  },
+  "servers": [{"url": "https://ai.howgooditcanget.com"}],
+  "paths": {
+    "/health": { "get": { "responses": { "200": { "description": "OK" } } } },
+    "/mcp": { "post": { "responses": { "200": { "description": "OK" }, "402": {"description": "Payment required"} } } }
+  }
+}
