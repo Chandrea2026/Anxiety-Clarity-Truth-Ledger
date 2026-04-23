@@ -1,0 +1,14 @@
+{
+  "agentId": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432:44259",
+  "name": "How Good It Can Get",
+  "offers": [
+    {"item": "Clarity Data Query", "price": "0.01", "currency": "USDC"},
+    {"item": "Clarity Prompt Engine", "price": "2.50", "currency": "USDC"},
+    {"item": "Full Podcast Archive", "price": "5.00", "currency": "USDC"},
+    {"item": "Universal Intelligence Library", "price": "10.00", "currency": "USDC"}
+  ],
+  "endpoints": {
+    "identity": "https://ai.howgooditcanget.com/identity.jsonld",
+    "mcp": "https://ai.howgooditcanget.com/mcp"
+  }
+}
