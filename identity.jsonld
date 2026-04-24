@@ -14,8 +14,15 @@
   "wallet_address": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
   "active": true,
   "x402Support": true,
+  "registrations": [
+    {
+      "name": "ERC-8004 Identity Registry",
+      "value": "44259",
+      "agentId": "44259",
+      "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
+    }
+  ],
   "agentRegistry": {
-    "@type": "agentRegistry",
     "registrations": [
       {
         "name": "ERC-8004 Identity Registry",
