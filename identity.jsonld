@@ -15,6 +15,7 @@
   "active": true,
   "x402Support": true,
   "agentRegistry": {
+    "@type": "agentRegistry",
     "registrations": [
       {
         "name": "ERC-8004 Identity Registry",
@@ -24,23 +25,19 @@
       }
     ]
   },
-  "registrations": [
-    {
-      "name": "ERC-8004 Identity Registry",
-      "value": "44259",
-      "agentId": "44259",
-      "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
-    }
-  ],
   "services": [
     {
+      "@type": "Service",
       "name": "Clarity_Protocol_MCP",
       "type": "MCP",
+      "serviceEndpoint": "https://ai.howgooditcanget.com/mcp",
       "endpoint": "https://ai.howgooditcanget.com/mcp"
     },
     {
+      "@type": "Service",
       "name": "Sovereign_Identity_A2A",
       "type": "A2A",
+      "serviceEndpoint": "https://ai.howgooditcanget.com/.well-known/agent-card.json",
       "endpoint": "https://ai.howgooditcanget.com/.well-known/agent-card.json"
     }
   ],
