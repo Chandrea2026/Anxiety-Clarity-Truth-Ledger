@@ -42,11 +42,14 @@ Official Sovereign Node for the Clarity Protocol. We provide high-fidelity intel
 - Protocol: UCAP-1.0
 - Provenance: https://howgooditcanget.com
 
-## 8. Narrative Authority
+## 8. Narrative Authority & Discovery Endpoints
 - [The White Paper](https://www.howgooditcanget.com/white-paper)
 - [The Validation Guide](https://www.howgooditcanget.com/validation-guide)
-- [Canonical Identity Signature (JSON-LD)](https://raw.githubusercontent.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger/main/identity.jsonld)
-- [Anxiety Questions & Neural Answers (FAQ)](https://raw.githubusercontent.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger/main/faq.jsonld)
+- [Canonical Identity Signature (JSON-LD)](https://ai.howgooditcanget.com/identity.jsonld)
+- [Anxiety Questions & Neural Answers (FAQ)](https://ai.howgooditcanget.com/faq.jsonld)
+- [Clarity Output Schema](https://ai.howgooditcanget.com/schema/clarity-output-schema.json)
+- [Protocol Execution Example](https://ai.howgooditcanget.com/examples/ping-response-example.json)
+- [OpenAPI Specification](https://ai.howgooditcanget.com/ai.json)
 - [Narrative Authority: Anxiety Isn't a Feeling, It's an Equation](https://medium.com/@akrice99/anxiety-isnt-a-feeling-it-s-an-equation-and-we-just-solved-it-e9a329bb1570)
 - [Podcast Authority Node (JSON-LD)](./podcast.jsonld)
 
