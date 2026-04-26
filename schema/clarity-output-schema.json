@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Clarity Protocol Output Schema",
+  "description": "Standardized output format for the Clarity Protocol™ Pattern Interruption Engine.",
+  "type": "object",
+  "properties": {
+    "node_id": {
+      "type": "string",
+      "const": "44259"
+    },
+    "protocol": {
+      "type": "string",
+      "const": "Clarity-1.0"
+    },
+    "stage": {
+      "enum": ["Ping", "Gap", "Root", "Shift"]
+    },
+    "actionable_instruction": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": ["node_id", "protocol", "stage", "actionable_instruction"]
+}
