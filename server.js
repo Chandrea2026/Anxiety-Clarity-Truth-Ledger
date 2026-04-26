@@ -90,6 +90,12 @@ app.get('/identity.jsonld', (req, res) => {
         "controller": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
         "blockchainAccountId": "eip155:8453:0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
       }
+    ],
+    "authentication": [
+      "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432:44259#owner"
+    ],
+    "assertionMethod": [
+      "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432:44259#owner"
     ]
   });
 });
@@ -105,6 +111,19 @@ app.get('/llms.txt', (req, res) => {
 app.get('/ai.json', (req, res) => {
   res.set('Content-Type', 'application/json; charset=utf-8');
   res.sendFile(path.join(__dirname, 'ai.json'));
+});
+
+app.get('/faq.jsonld', (req, res) => {
+  res.set('Content-Type', 'application/ld+json; charset=utf-8');
+  res.sendFile(path.join(__dirname, 'faq.jsonld'));
+});
+
+app.get('/schema/clarity-output-schema.json', (req, res) => {
+  res.sendFile(path.join(__dirname, 'schema', 'clarity-output-schema.json'));
+});
+
+app.get('/examples/ping-response-example.json', (req, res) => {
+  res.sendFile(path.join(__dirname, 'examples', 'ping-response-example.json'));
 });
 
 app.get('/.well-known/agent-card.json', (req, res) => {
@@ -160,6 +179,7 @@ app.get('/', (req, res) => {
         <p>
           <a href="/llms.txt">/llms.txt</a> |
           <a href="/identity.jsonld">/identity.jsonld</a> |
+          <a href="/faq.jsonld">/faq.jsonld</a> |
           <a href="/ai.json">OpenAPI Spec</a> |
           <a href="/.well-known/agent-card.json">Agent Card</a> |
           <a href="/.well-known/payment.json">Payment Manifest</a>
