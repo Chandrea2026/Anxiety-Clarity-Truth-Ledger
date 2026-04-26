@@ -59,5 +59,11 @@
       "controller": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
       "blockchainAccountId": "eip155:8453:0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
     }
+  ],
+  "authentication": [
+    "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432:44259#owner"
+  ],
+  "assertionMethod": [
+    "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432:44259#owner"
   ]
 }
