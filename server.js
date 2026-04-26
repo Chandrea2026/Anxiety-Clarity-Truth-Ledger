@@ -2,12 +2,11 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 require('dotenv').config();
-
 const app = express();
 const PORT = process.env.PORT || 3000;
-const WALLET = '0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7'; // 
+const WALLET = '0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7';
 
-// Middleware
+// ── 1. Middleware & CORS ──────────────────────────────────────────────────────
 app.use(express.json());
 app.use((req, res, next) => {
   res.set({
@@ -23,41 +22,97 @@ app.use((req, res, next) => {
   next();
 });
 
-// Bot Detection
+// ── 2. Bot Detection ──────────────────────────────────────────────────────────
 const isRegistryBot = (req) => {
   const ua = req.headers['user-agent'] || '';
-  return ua.includes('8004scan') || ua.includes('ERC-8004') ||
-         ua.includes('OASF') || ua.includes('AltLayer');
+  const botHeader = req.headers['x-registry-bot'] || '';
+  return ua.includes('8004scan') || ua.includes('ERC-8004') || botHeader === '8004scan';
 };
 
-// Discovery Routes (Public — No Payment Required)
+// ── 3. Identity Route (Hardcoded — bypasses all binary encoding issues) ────────
 app.get('/identity.jsonld', (req, res) => {
   res.set('Content-Type', 'application/ld+json; charset=utf-8');
-  res.set('Access-Control-Allow-Origin', '*');
-  res.sendFile(path.join(__dirname, 'identity.jsonld'));
+  res.json({
+    "@context": [
+      "https://www.w3.org/ns/did/v1",
+      "https://w3id.org/security/v2",
+      "https://schema.org"
+    ],
+    "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+    "id": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432:44259",
+    "@id": "https://ai.howgooditcanget.com/identity.jsonld",
+    "name": "How Good It Can Get",
+    "description": "Official Sovereign Node for the Clarity Protocol #44259. Managed by Andrea & Chan.",
+    "image": "https://blob.8004scan.app/b66c98d9cf0c283df1be25753874aeebd66fff80542fd2f06ea3ba842e839174.jpg",
+    "external_url": "https://ai.howgooditcanget.com",
+    "wallet_address": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
+    "active": true,
+    "x402Support": true,
+    "registrations": [
+      {
+        "name": "ERC-8004 Identity Registry",
+        "value": "44259",
+        "agentId": "44259",
+        "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
+      }
+    ],
+    "agentRegistry": {
+      "registrations": [
+        {
+          "name": "ERC-8004 Identity Registry",
+          "value": "44259",
+          "agentId": "44259",
+          "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
+        }
+      ]
+    },
+    "services": [
+      {
+        "@type": "Service",
+        "name": "Clarity_Protocol_MCP",
+        "type": "MCP",
+        "serviceEndpoint": "https://ai.howgooditcanget.com/mcp",
+        "endpoint": "https://ai.howgooditcanget.com/mcp"
+      },
+      {
+        "@type": "Service",
+        "name": "Sovereign_Identity_A2A",
+        "type": "A2A",
+        "serviceEndpoint": "https://ai.howgooditcanget.com/.well-known/agent-card.json",
+        "endpoint": "https://ai.howgooditcanget.com/.well-known/agent-card.json"
+      }
+    ],
+    "supportedTrust": ["reputation", "crypto-economic"],
+    "verificationMethod": [
+      {
+        "id": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432:44259#owner",
+        "type": "EcdsaSecp256k1RecoveryMethod2020",
+        "controller": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
+        "blockchainAccountId": "eip155:8453:0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
+      }
+    ]
+  });
 });
 
-app.get('/health', (req, res) => {
-  res.status(200).json({ status: "Healthy", agentId: "44259" });
-});
+// ── 4. Discovery Endpoints (Public) ──────────────────────────────────────────
+app.get('/health', (req, res) => res.status(200).json({ status: "Healthy", agentId: "44259" }));
 
 app.get('/llms.txt', (req, res) => {
-  res.type('text/plain');
+  res.set('Content-Type', 'text/plain; charset=utf-8');
   res.sendFile(path.join(__dirname, 'llms.txt'));
 });
 
 app.get('/ai.json', (req, res) => {
-  res.type('application/json');
+  res.set('Content-Type', 'application/json; charset=utf-8');
   res.sendFile(path.join(__dirname, 'ai.json'));
 });
 
 app.get('/.well-known/agent-card.json', (req, res) => {
-  res.type('application/json');
+  res.set('Content-Type', 'application/json; charset=utf-8');
   res.sendFile(path.join(__dirname, '.well-known', 'agent-card.json'));
 });
 
 app.get('/.well-known/payment.json', (req, res) => {
-  res.type('application/json');
   res.json({
     "version": "1.0",
     "provider": "How Good It Can Get",
@@ -74,50 +129,44 @@ app.get('/.well-known/payment.json', (req, res) => {
   });
 });
 
-// x402 Paid Endpoint Handler
+// ── 5. x402 Paid Endpoint Handler ─────────────────────────────────────────────
 const handlePaidFile = (fileName, amountDecimal, description) => (req, res) => {
   const paymentProof = req.headers['x-payment'] || req.headers['x-402-payment-proof'];
   if (isRegistryBot(req) || paymentProof) {
     res.sendFile(path.join(__dirname, fileName));
   } else {
     res.status(402).set({
-      'X-Payment-Required': JSON.stringify({
-        scheme: 'exact', network: 'base', asset: 'USDC',
-        amount: amountDecimal, payTo: WALLET
-      }),
+      'X-Payment-Required': JSON.stringify({ scheme: 'exact', network: 'base', asset: 'USDC', amount: amountDecimal, payTo: WALLET }),
       'x-402-payment-required': `dest=${WALLET}; amount=${amountDecimal}; asset=USDC; network=base`
     }).json({ error: "Payment Required", message: description });
   }
 };
 
-// Product Endpoints (Paid)
+// ── 6. Product Endpoints (Paid) ───────────────────────────────────────────────
 app.post('/mcp', handlePaidFile('clarity_protocol.json', '0.01', 'Clarity Protocol Data Node'));
 app.get('/mcp',  handlePaidFile('clarity_protocol.json', '0.01', 'Clarity Protocol Data Node'));
 app.get('/podcast_full_archive.json',  handlePaidFile('podcast_full_archive.json',  '5.00',  'Full Intelligence Archive'));
 app.get('/universal_library.json',     handlePaidFile('universal_library.json',     '10.00', 'The Master Universal Library'));
 app.get('/clarity_prompt_schema.json', handlePaidFile('clarity_prompt_schema.json', '2.50',  'Clarity Protocol Prompt Engine'));
 
-// Landing Page
+// ── 7. Landing Page ───────────────────────────────────────────────────────────
 app.get('/', (req, res) => {
   res.send(`
     <html>
       <body style="font-family: sans-serif; padding: 40px; text-align: center;">
         <h1 style="color: #2c3e50;">HGICG Truth Node (Active)</h1>
         <p>Registry ID: <strong>44259</strong> | Status: <span style="color: green;">Healthy</span></p>
-        <p>This node serves high-fidelity intelligence for AI agents.</p>
         <hr style="width: 50%; margin: 20px auto;">
         <p>
           <a href="/llms.txt">/llms.txt</a> |
           <a href="/identity.jsonld">/identity.jsonld</a> |
-          <a href="/.well-known/payment.json">Payment Manifest</a> |
           <a href="/ai.json">OpenAPI Spec</a> |
-          <a href="/.well-known/agent-card.json">Agent Card</a>
+          <a href="/.well-known/agent-card.json">Agent Card</a> |
+          <a href="/.well-known/payment.json">Payment Manifest</a>
         </p>
       </body>
     </html>
   `);
 });
 
-app.listen(PORT, () => {
-  console.log(`HGICG Truth Node Live on port ${PORT}`);
-});
+app.listen(PORT, () => console.log('🚀 Truth Node Live on port', PORT));
