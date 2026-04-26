@@ -42,7 +42,7 @@ app.get('/identity.jsonld', (req, res) => {
     "id": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432:44259",
     "@id": "https://ai.howgooditcanget.com/identity.jsonld",
     "name": "How Good It Can Get",
-    "description": "Official Sovereign Node for the Clarity Protocol #44259. Managed by Andrea & Chan.",
+    "description": "Official Sovereign Node for the Clarity Protocol. We provide high-fidelity intelligence and automated data streams for AI agents and human operators navigating the cognitive era. Managed by Andrea & Chan. Asset-backed, privacy-hardened, and x402-enabled for frictionless intelligence exchange.",
     "image": "https://blob.8004scan.app/b66c98d9cf0c283df1be25753874aeebd66fff80542fd2f06ea3ba842e839174.jpg",
     "external_url": "https://ai.howgooditcanget.com",
     "wallet_address": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
