@@ -1,12 +1,28 @@
 {
-  "openapi": "3.1.0",
+  "openapi": "3.0.0",
   "info": {
-    "title": "How Good It Can Get API",
-    "version": "1.0.0"
+    "title": "HGICG Truth Node",
+    "version": "1.0.0",
+    "description": "Official Sovereign Node for the Clarity Protocol. We provide high-fidelity intelligence and automated data streams for AI agents and human operators navigating the cognitive era. Managed by Andrea & Chan. Asset-backed, privacy-hardened, and x402-enabled for frictionless intelligence exchange."
   },
-  "servers": [{"url": "https://ai.howgooditcanget.com"}],
+  "servers": [
+    { "url": "https://ai.howgooditcanget.com" }
+  ],
   "paths": {
-    "/health": { "get": { "responses": { "200": { "description": "OK" } } } },
-    "/mcp": { "post": { "responses": { "200": { "description": "OK" }, "402": {"description": "Payment required"} } } }
+    "/health": { 
+      "get": { 
+        "summary": "Node Health Check",
+        "responses": { "200": { "description": "OK" } } 
+      } 
+    },
+    "/mcp": { 
+      "post": { 
+        "summary": "Clarity Protocol MCP Endpoint",
+        "responses": { 
+          "200": { "description": "OK" }, 
+          "402": { "description": "Payment required - 0.01 USDC" } 
+        } 
+      } 
+    }
   }
 }
