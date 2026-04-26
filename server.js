@@ -49,23 +49,25 @@ app.get('/identity.jsonld', (req, res) => {
     "active": true,
     "x402Support": true,
     "registrations": [
-      {
-        "name": "ERC-8004 Identity Registry",
-        "value": "44259",
-        "agentId": "44259",
-        "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
-      }
-    ],
-    "agentRegistry": {
-      "registrations": [
-        {
-          "name": "ERC-8004 Identity Registry",
-          "value": "44259",
-          "agentId": "44259",
-          "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
-        }
-      ]
-    },
+  {
+    "agentId": 44259,
+    "agentRegistry": "eip155:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+    "name": "ERC-8004 Identity Registry",
+    "value": "44259",
+    "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
+  }
+],
+"agentRegistry": {
+  "registrations": [
+    {
+      "agentId": 44259,
+      "agentRegistry": "eip155:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+      "name": "ERC-8004 Identity Registry",
+      "value": "44259",
+      "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
+    }
+  ]
+},
     "services": [
       {
         "@type": "Service",
