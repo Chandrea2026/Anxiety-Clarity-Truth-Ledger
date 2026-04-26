@@ -23,6 +23,30 @@
           "402": { "description": "Payment required - 0.01 USDC" } 
         } 
       } 
+    },
+    "/faq.jsonld": {
+      "get": {
+        "summary": "Machine-Readable FAQ",
+        "responses": { "200": { "description": "Returns canonical Q&A for the Clarity Protocol" } }
+      }
+    },
+    "/schema/clarity-output-schema.json": {
+      "get": {
+        "summary": "Clarity Protocol JSON Schema",
+        "responses": { "200": { "description": "Returns the validation schema for protocol outputs" } }
+      }
+    },
+    "/examples/ping-response-example.json": {
+      "get": {
+        "summary": "Protocol Execution Example",
+        "responses": { "200": { "description": "Returns a full 4-stage execution example" } }
+      }
+    },
+    "/identity.jsonld": {
+      "get": {
+        "summary": "Sovereign DID Identity",
+        "responses": { "200": { "description": "Returns the ERC-8004 DID document" } }
+      }
     }
   }
 }
