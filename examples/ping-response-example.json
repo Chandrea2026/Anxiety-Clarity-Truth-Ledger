@@ -1,0 +1,32 @@
+{
+  "node_id": "44259",
+  "protocol": "Clarity-1.0",
+  "scenario": "Sudden onset of 'impending doom' or physical tightness while working.",
+  "execution_stages": [
+    {
+      "stage": "1. Ping",
+      "action": "Signal Identification",
+      "logic": "Acknowledge the physical sensation (heart racing, shallow breath) as a 'Hardware Ping.' Remove the narrative that 'something is wrong.'",
+      "instruction": "Say: 'This is a Ping. It is data, not a threat.'"
+    },
+    {
+      "stage": "2. Gap",
+      "action": "Neural Interruption",
+      "logic": "Create 3-5 seconds of space between the Ping and the reaction. This prevents the system from escalating into the old habit loop.",
+      "instruction": "Pause. Do not check your phone. Do not pace. Simply exist in the Gap."
+    },
+    {
+      "stage": "3. Root",
+      "action": "Source Extraction",
+      "logic": "Identify that the system is trying to solve an unsolvable future problem using past fear patterns.",
+      "instruction": "Ask: 'Is this a real-time physical threat, or a memory/prediction loop?'"
+    },
+    {
+      "stage": "4. Shift",
+      "action": "Response Selection",
+      "logic": "Choose a deliberate action that contradicts the anxiety pattern, signaling to the nervous system that the 'threat' is over.",
+      "instruction": "Take one deep breath and return to the immediate task. The loop is broken."
+    }
+  ],
+  "outcome": "Neurological pattern interrupted. System returned to Baseline Sovereign State."
+}
