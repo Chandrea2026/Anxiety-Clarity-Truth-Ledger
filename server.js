@@ -38,7 +38,7 @@ app.get('/identity.jsonld', (req, res) => {
       "https://w3id.org/security/v2",
       "https://schema.org"
     ],
-    "@type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+    "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
     "id": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432:44259",
     "@id": "https://ai.howgooditcanget.com/identity.jsonld",
     "name": "How Good It Can Get",
