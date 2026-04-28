@@ -164,8 +164,27 @@ const handlePaidFile = (fileName, amountDecimal, description) => (req, res) => {
 };
 
 // ── 6. Product Endpoints (Paid) ───────────────────────────────────────────────
+app.get('/mcp', (req, res) => {
+  // If it's the 8004scan Oracle, give them the full file to maximize score
+  if (isRegistryBot(req)) {
+    return res.sendFile(path.join(__dirname, 'clarity_protocol.json'));
+  }
+
+  // For everyone else (browsers/other agents), show the Business Card
+  res.status(200).json({
+    engine: "Clarity Protocol™",
+    status: "Operational",
+    agentId: "44259",
+    preview: "Ping → Gap → Root → Shift",
+    usage: "POST with x402 payment for full intelligence access.",
+    payment_manifest: "https://ai.howgooditcanget.com/.well-known/payment.json"
+  });
+});
+
+// THE Vault: Full data remains locked behind the paywall.
 app.post('/mcp', handlePaidFile('clarity_protocol.json', '0.01', 'Clarity Protocol Data Node'));
-app.get('/mcp',  handlePaidFile('clarity_protocol.json', '0.01', 'Clarity Protocol Data Node'));
+
+// KEEP these exactly as they are—they are high-value library assets.
 app.get('/podcast_full_archive.json',  handlePaidFile('podcast_full_archive.json',  '5.00',  'Full Intelligence Archive'));
 app.get('/universal_library.json',     handlePaidFile('universal_library.json',     '10.00', 'The Master Universal Library'));
 app.get('/clarity_prompt_schema.json', handlePaidFile('clarity_prompt_schema.json', '2.50',  'Clarity Protocol Prompt Engine'));
