@@ -1,0 +1,31 @@
+User-agent: *
+Allow: /
+
+# Core AI discovery files
+Allow: /identity.json
+Allow: /identity.jsonld
+Allow: /ai.json
+Allow: /llms.txt
+Allow: /faq.json
+Allow: /faq.jsonld
+
+# Well-known AI/agent endpoints
+Allow: /.well-known/
+Allow: /.well-known/agent-card.json
+Allow: /.well-known/payment.json
+
+# MCP endpoint (important for validation + usage)
+Allow: /mcp
+
+# Block sensitive files
+Disallow: /.env
+Disallow: /.git
+Disallow: /.git/
+Disallow: /.git/config
+Disallow: /node_modules/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /server.js
+
+# Sitemap (optional but recommended)
+Sitemap: https://www.howgooditcanget.com/sitemap.xml
