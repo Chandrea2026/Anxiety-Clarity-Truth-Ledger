@@ -105,6 +105,11 @@ app.get('/identity.jsonld', (req, res) => {
 // ── 4. Discovery Endpoints (Public) ──────────────────────────────────────────
 app.get('/health', (req, res) => res.status(200).json({ status: "Healthy", agentId: "44259" }));
 
+app.get('/robots.txt', (req, res) => {
+  res.set('Content-Type', 'text/plain; charset=utf-8');
+  res.sendFile(path.join(__dirname, 'robots.txt'));
+});
+
 app.get('/llms.txt', (req, res) => {
   res.set('Content-Type', 'text/plain; charset=utf-8');
   res.sendFile(path.join(__dirname, 'llms.txt'));
