@@ -1,0 +1,81 @@
+{
+  "version": "1.0",
+  "provider": "How Good It Can Get",
+  "description": "Clarity Protocol AI Data Node — x402 micropayment access for AI agents and human operators.",
+  "protocol": "x402",
+  "network": "base",
+  "asset": "USDC",
+  "currency": "USDC",
+  "wallet": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
+  "walletAddress": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
+  "wallet_address": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
+  "payTo": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
+  "payment_headers": {
+    "accepted": [
+      "X-Payment",
+      "X-402-Payment-Proof"
+    ],
+    "challenge_headers": [
+      "X-Payment-Required",
+      "x-402-payment-required"
+    ]
+  },
+  "endpoints": [
+    {
+      "name": "Clarity Protocol Data Node",
+      "path": "/mcp",
+      "method": "POST",
+      "description": "Full Clarity Protocol intelligence response and pattern interruption data.",
+      "price": "0.01",
+      "currency": "USDC",
+      "network": "base",
+      "asset": "USDC",
+      "wallet": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
+      "payTo": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
+    },
+    {
+      "name": "Full Intelligence Archive",
+      "path": "/podcast_full_archive.json",
+      "method": "GET",
+      "description": "Full podcast intelligence archive.",
+      "price": "5.00",
+      "currency": "USDC",
+      "network": "base",
+      "asset": "USDC",
+      "wallet": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
+      "payTo": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
+    },
+    {
+      "name": "The Master Universal Library",
+      "path": "/universal_library.json",
+      "method": "GET",
+      "description": "Master universal library for How Good It Can Get knowledge assets.",
+      "price": "10.00",
+      "currency": "USDC",
+      "network": "base",
+      "asset": "USDC",
+      "wallet": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
+      "payTo": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
+    },
+    {
+      "name": "Clarity Protocol Prompt Engine",
+      "path": "/clarity_prompt_schema.json",
+      "method": "GET",
+      "description": "Prompt schema and structured prompt engine for the Clarity Protocol.",
+      "price": "2.50",
+      "currency": "USDC",
+      "network": "base",
+      "asset": "USDC",
+      "wallet": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
+      "payTo": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
+    }
+  ],
+  "public_preview": {
+    "path": "/mcp",
+    "method": "GET",
+    "requires_payment": false,
+    "description": "Public validation preview for agents and registries. Full execution requires x402 payment."
+  },
+  "authority_ledger": "https://github.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger",
+  "canonical_identity": "https://ai.howgooditcanget.com/identity.jsonld",
+  "agent_card": "https://ai.howgooditcanget.com/.well-known/agent-card.json"
