@@ -9,12 +9,12 @@ Allow: /llms.txt
 Allow: /faq.json
 Allow: /faq.jsonld
 
-# Well-known AI/agent endpoints
+# Agent + payment discovery
 Allow: /.well-known/
 Allow: /.well-known/agent-card.json
 Allow: /.well-known/payment.json
 
-# MCP endpoint (important for validation + usage)
+# MCP endpoint
 Allow: /mcp
 
 # Block sensitive files
@@ -27,5 +27,5 @@ Disallow: /package.json
 Disallow: /package-lock.json
 Disallow: /server.js
 
-# Sitemap (optional but recommended)
+# Sitemap
 Sitemap: https://www.howgooditcanget.com/sitemap.xml
