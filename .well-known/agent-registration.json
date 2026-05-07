@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "standard": "ERC-8004",
+  "name": "How Good It Can Get",
+  "agentId": 44259,
+  "registry": "eip155:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+  "registrationId": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432:44259",
+  "status": "active",
+  "identity": "https://ai.howgooditcanget.com/identity.jsonld",
+  "agentCard": "https://ai.howgooditcanget.com/.well-known/agent-card.json",
+  "mcp": "https://ai.howgooditcanget.com/mcp",
+  "payment": "https://ai.howgooditcanget.com/.well-known/payment.json",
+  "llms": "https://ai.howgooditcanget.com/llms.txt",
+  "authorityLedger": "https://github.com/Chandrea2026/Anxiety-Clarity-Truth-Ledger",
+  "walletAddress": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
+  "network": "base",
+  "x402Support": true,
+  "services": [
+    {
+      "name": "MCP",
+      "type": "MCP",
+      "endpoint": "https://ai.howgooditcanget.com/mcp"
+    },
+    {
+      "name": "A2A",
+      "type": "A2A",
+      "endpoint": "https://ai.howgooditcanget.com/.well-known/agent-card.json"
+    },
+    {
+      "name": "x402",
+      "type": "payment",
+      "endpoint": "https://ai.howgooditcanget.com/.well-known/payment.json"
+    }
+  ]
+}
