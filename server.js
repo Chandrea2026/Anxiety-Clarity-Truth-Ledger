@@ -138,6 +138,11 @@ app.get('/.well-known/agent-card.json', (req, res) => {
   res.sendFile(path.join(__dirname, '.well-known', 'agent-card.json'));
 });
 
+app.get('/.well-known/agent-registration.json', (req, res) => {
+  res.set('Content-Type', 'application/json; charset=utf-8');
+  res.sendFile(path.join(__dirname, '.well-known', 'agent-registration.json'));
+});
+
 app.get('/.well-known/payment.json', (req, res) => {
   res.json({
     "version": "1.0",
