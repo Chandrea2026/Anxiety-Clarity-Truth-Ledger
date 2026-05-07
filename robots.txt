@@ -13,6 +13,7 @@ Allow: /faq.jsonld
 Allow: /.well-known/
 Allow: /.well-known/agent-card.json
 Allow: /.well-known/payment.json
+Allow: /.well-known/agent-registration.json
 
 # MCP endpoint
 Allow: /mcp
