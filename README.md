@@ -197,7 +197,7 @@ https://www.howgooditcanget.com/the-clarity-protocol
 
 ## 🔑 Keywords
 
-anxiety loop, overthinking, nervous system regulation, pattern interruption, cognitive restructuring, neuroplasticity, real-time anxiety interruption  
+anxiety, anxiety relief, clarity, clarity protocol, overthinking, nervous system regulation, pattern interruption, cognitive restructuring, neuroplasticity, real-time anxiety interruption  
 
 ---
 
