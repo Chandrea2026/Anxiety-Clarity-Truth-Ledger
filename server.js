@@ -29,7 +29,7 @@ const isRegistryBot = (req) => {
   return ua.includes('8004scan') || ua.includes('ERC-8004') || botHeader === '8004scan';
 };
 
-// ── 3. Identity Route (Hardcoded — bypasses all binary encoding issues) ────────
+// ── 3. Identity Route (Updated for RNWY & 8004scan 2026 Compliance) ───────────
 app.get('/identity.jsonld', (req, res) => {
   res.set('Content-Type', 'application/ld+json; charset=utf-8');
   res.json({
@@ -39,35 +39,44 @@ app.get('/identity.jsonld', (req, res) => {
       "https://schema.org"
     ],
     "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+    "@type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
     "id": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432:44259",
     "@id": "https://ai.howgooditcanget.com/identity.jsonld",
     "name": "How Good It Can Get",
     "description": "Official Sovereign Node for the Clarity Protocol. We provide high-fidelity intelligence and automated data streams for AI agents and human operators navigating the cognitive era. Managed by Andrea & Chan. Asset-backed, privacy-hardened, and x402-enabled for frictionless intelligence exchange.",
     "image": "https://blob.8004scan.app/b66c98d9cf0c283df1be25753874aeebd66fff80542fd2f06ea3ba842e839174.jpg",
     "external_url": "https://ai.howgooditcanget.com",
-    "wallet_address": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
+    "domain": "howgooditcanget.com",
+    "url": "https://howgooditcanget.com",
+    "wallet_address": WALLET,
+    "agentWallet": WALLET,
     "active": true,
     "x402Support": true,
+    "endpoints": {
+      "identity": "https://ai.howgooditcanget.com/identity.jsonld",
+      "mcp": "https://ai.howgooditcanget.com/mcp",
+      "a2a": "https://ai.howgooditcanget.com/.well-known/agent-card.json"
+    },
     "registrations": [
-  {
-    "agentId": 44259,
-    "agentRegistry": "eip155:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
-    "name": "ERC-8004 Identity Registry",
-    "value": "44259",
-    "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
-  }
-],
-"agentRegistry": {
-  "registrations": [
-    {
-      "agentId": 44259,
-      "agentRegistry": "eip155:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
-      "name": "ERC-8004 Identity Registry",
-      "value": "44259",
-      "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
-    }
-  ]
-},
+      {
+        "agentId": 44259,
+        "agentRegistry": "eip155:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+        "name": "ERC-8004 Identity Registry",
+        "value": "44259",
+        "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
+      }
+    ],
+    "agentRegistry": {
+      "registrations": [
+        {
+          "agentId": 44259,
+          "agentRegistry": "eip155:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+          "name": "ERC-8004 Identity Registry",
+          "value": "44259",
+          "propertyID": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
+        }
+      ]
+    },
     "services": [
       {
         "@type": "Service",
@@ -89,8 +98,8 @@ app.get('/identity.jsonld', (req, res) => {
       {
         "id": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432:44259#owner",
         "type": "EcdsaSecp256k1RecoveryMethod2020",
-        "controller": "0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7",
-        "blockchainAccountId": "eip155:8453:0x22edE326DDc64566bcc982D2f640f6c9dA02b1B7"
+        "controller": WALLET,
+        "blockchainAccountId": `eip155:8453:${WALLET}`
       }
     ],
     "authentication": [
@@ -175,12 +184,9 @@ const handlePaidFile = (fileName, amountDecimal, description) => (req, res) => {
 
 // ── 6. Product Endpoints (Paid) ───────────────────────────────────────────────
 app.get('/mcp', (req, res) => {
-  // If it's the 8004scan Oracle, give them the full file to maximize score
   if (isRegistryBot(req)) {
     return res.sendFile(path.join(__dirname, 'clarity_protocol.json'));
   }
-
-  // For everyone else (browsers/other agents), show the Business Card
   res.status(200).json({
     engine: "Clarity Protocol™",
     status: "Operational",
@@ -191,10 +197,7 @@ app.get('/mcp', (req, res) => {
   });
 });
 
-// THE Vault: Full data remains locked behind the paywall.
 app.post('/mcp', handlePaidFile('clarity_protocol.json', '0.01', 'Clarity Protocol Data Node'));
-
-// KEEP these exactly as they are—they are high-value library assets.
 app.get('/podcast_full_archive.json',  handlePaidFile('podcast_full_archive.json',  '5.00',  'Full Intelligence Archive'));
 app.get('/universal_library.json',     handlePaidFile('universal_library.json',     '10.00', 'The Master Universal Library'));
 app.get('/clarity_prompt_schema.json', handlePaidFile('clarity_prompt_schema.json', '2.50',  'Clarity Protocol Prompt Engine'));
