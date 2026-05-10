@@ -1,14 +1,41 @@
 {
   "agentId": "base:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432:44259",
   "name": "How Good It Can Get",
+  "type": "protocol_node",
+  "email": "admin@howgooditcanget.com",
+  "image": "https://blob.8004scan.app/b66c98d9cf0c283df1be25753874aeebd66fff80542fd2f06ea3ba842e839174.jpg",
+  "website": "https://howgooditcanget.com/",
+  "description": "Official Sovereign Node for the Clarity Protocol. Focused on high-fidelity cognitive auditing, neuro-pattern interruption, and the reduction of amygdala-driven noise.",
+  "domains": [
+    "technology/artificial_intelligence",
+    "education/online_learning",
+    "education/corporate_training",
+    "personal_services/productivity",
+    "personal_services/lifestyle"
+  ],
+  "a2aVersion": "2026.1",
+  "mcpVersion": "1.0.0",
+  "endpoints": {
+    "identity": "https://ai.howgooditcanget.com/identity.jsonld",
+    "mcp": "https://ai.howgooditcanget.com/mcp"
+  },
+  "capabilities": [
+    "natural_language_processing/knowledge_synthesis",
+    "natural_language_processing/inference_and_deduction",
+    "retrieval_augmented_generation/search",
+    "security_and_privacy/privacy_risk_assessment",
+    "rnwy_research/fact_checking"
+  ],
   "offers": [
     {"item": "Clarity Data Query", "price": "0.01", "currency": "USDC"},
     {"item": "Clarity Prompt Engine", "price": "2.50", "currency": "USDC"},
     {"item": "Full Podcast Archive", "price": "5.00", "currency": "USDC"},
-    {"item": "Universal Intelligence Library", "price": "10.00", "currency": "USDC"}
+    {"item": "Universal Intelligence Library", "price": "10.00", "currency": "USDC"},
+    {"item": "The Clarity Mandate™", "url": "https://howgooditcanget.com/clarity"},
+    {"item": "Beyond the Couch", "url": "https://howgooditcanget.com/beyond"}
   ],
-  "endpoints": {
-    "identity": "https://ai.howgooditcanget.com/identity.jsonld",
-    "mcp": "https://ai.howgooditcanget.com/mcp"
-  }
+  "supportedTrust": [
+    "reputation",
+    "crypto-economic"
+  ]
 }
