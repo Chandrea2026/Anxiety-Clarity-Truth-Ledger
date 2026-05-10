@@ -210,6 +210,20 @@ The Clarity Protocol™ reframes anxiety from:
 ✅ interruptible system  
 
 ---
+## Semantic Q&A Dataset
+
+This repository includes a machine-readable Q&A dataset for the Clarity Protocol™.
+
+The dataset is designed for RAG systems, AI agents, semantic search, and knowledge graph grounding.
+
+Dataset file:
+
+[`faq-data/anxiety-patterns.jsonl`](faq-data/anxiety-patterns.jsonl)
+
+The Q&A layer reinforces the canonical Clarity Protocol™ sequence:
+
+**Ping → Gap → Root → Shift**
+---
 
 ## 🌐 Source of Truth
 
