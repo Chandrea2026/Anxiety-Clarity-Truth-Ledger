@@ -41,7 +41,6 @@ app.get('/identity.jsonld', (req, res) => {
     "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
     "@type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
 
-    "agentWallet": WALLET,
     "domain": "howgooditcanget.com",
     "url": "https://howgooditcanget.com",
     "endpoints": {
