@@ -55,7 +55,6 @@ app.get('/identity.jsonld', (req, res) => {
     "description": "Official Sovereign Node for the Clarity Protocol. We provide high-fidelity intelligence and automated data streams for AI agents and human operators navigating the cognitive era. Managed by Andrea & Chan. Asset-backed, privacy-hardened, and x402-enabled for frictionless intelligence exchange.",
     "image": "https://blob.8004scan.app/b66c98d9cf0c283df1be25753874aeebd66fff80542fd2f06ea3ba842e839174.jpg",
     "external_url": "https://ai.howgooditcanget.com",
-    "wallet_address": WALLET,
     "active": true,
     "x402Support": true,
 
